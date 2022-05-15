@@ -132,7 +132,7 @@ body.dark-theme{
 .scale-cv .languages__content{
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .scale-cv .bd-grid{
@@ -142,6 +142,10 @@ body.dark-theme{
 
 .scale-cv .interests__content{
     margin-top: 1rem;
+}
+
+.scale-cv .translate-link{
+    display: none;
 }
 
 
@@ -174,6 +178,7 @@ ul{
 
 a{
     text-decoration: none;
+    list-style: none;
 }
 
 
@@ -335,6 +340,7 @@ img{
     align-items: center;
     font-size: var(--pequeno-font-size)
 }
+
 
 .home__icon{
     font-size: 1.2rem;
@@ -562,6 +568,27 @@ img{
 
 
 
+/*.change-language{
+    position: absolute;
+    left: 0;
+    top: 96%;
+    display: flex;
+    color: var(--texto-cor);
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.change-language:hover{
+    color: var(--titulo-cor);
+}
+
+.change-language:focus{
+    color: var(--titulo-cor);
+}*/
+
+
+
+
 /* ----------- Dark Button -------------*/
 body.scale-cv{
     --h1-font-size: .80rem;
@@ -607,6 +634,10 @@ body.scale-cv{
     .nav__list{
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem .5rem;
+    }
+
+    .translate-link{
+        display: none;
     }
 }
 
