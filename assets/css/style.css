@@ -132,7 +132,7 @@ body.dark-theme{
 .scale-cv .languages__content{
     display: flex;
     flex-direction: row;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .scale-cv .bd-grid{
@@ -141,12 +141,19 @@ body.dark-theme{
 
 
 .scale-cv .interests__content{
-    margin-top: 1rem;
+    margin-top: .75rem;
 }
 
 .scale-cv .translate-link{
     display: none;
 }
+
+.scale-cv .languages__name{
+    margin-bottom: .25rem;
+}
+
+
+
 
 
 body{
@@ -630,7 +637,7 @@ body.scale-cv{
 
 
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 413px){
     .nav__list{
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem .5rem;

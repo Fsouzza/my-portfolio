@@ -83,7 +83,7 @@ let areacv = document.getElementById('area-cv');
 let opt = {
     margin:       0,
     filename:     'Curriculo.pdf',
-    image:        { type: 'jpeg', quality: 1 },
+    image:        { type: 'jpeg', quality: 1.5 },
     html2canvas:  { scale: 4 },
     jsPDF:        { format: 'A4', orientation: 'portrait' }
 };
