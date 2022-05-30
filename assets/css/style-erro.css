@@ -1,0 +1,283 @@
+/* ============= NAV CABECALHO ============== */
+.cabecalho{
+    background-color: var(--cor-fundo-secund);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav{
+    height: var(--cabecalho-altura);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo, .nav__toggle{
+    display: inline-flex;
+}
+
+.nav__logo{
+    font-weight: 700;
+}
+
+.nav__toggle{
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+
+.nav__lista{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.nav__close{
+   position: absolute;
+   top: 1rem; 
+   right: 1.5rem;
+   font-size: 1.6rem;
+   cursor: pointer;
+}
+
+
+
+/* ============= HOME ============== */
+.home{
+    display: grid;
+    padding: 7rem 0 2rem;
+    height: 100vh;
+}
+
+.home__container{
+    display: grid;
+    align-content: center;
+    row-gap: 2.5rem;
+}
+
+.home__data{
+    text-align: center;
+}
+
+.home__subtitulo, .home__info{
+    display: block;
+}
+
+.home__titulo{
+    font-size: var(--font-size-grande);
+    margin: .75rem 0;
+}
+
+
+.home__botao{
+    background: var(--plano-azul);
+    color: #fff;
+    display: inline-block;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    padding: .8rem 1.5rem;
+    border-radius: 2.5rem;
+    transition: .4s;
+    border: none;
+}
+
+.home__botao:hover, .home__botao:focus{
+    box-shadow: 0 4px 12px hsla(38, 69%, 8%, .2);
+}
+
+
+.home__img img{
+    width: 230px;
+    animation: floaty 2s infinite alternate;
+}
+
+
+.home__img{
+    justify-self: center;
+}
+
+
+.home__fundo{
+    background-color: rgba(44, 14, 14, 0.16);
+    border-radius: 50%;
+    width: 130px;
+    height: 24px;
+    border: none;
+    filter: blur(6px);
+    animation: shadow 2s infinite alternate;
+    justify-self: center;
+    margin-left: 3rem;
+}
+
+
+
+
+
+/* ============= RODAPE ============== */
+.home__rodape{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 1.4rem;
+    font-size: var(--font-size-pequeno);
+    align-self: flex-end;
+}
+
+.home__rodape small{
+    font-size: .9rem;
+}
+
+.uil-instagram{
+    margin-right: .64rem;
+}
+
+
+
+
+/* ============= ANIMACOES ============== */
+@keyframes floaty{
+    0%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(15px);
+    }
+}
+
+
+
+@keyframes shadow{
+    0%{
+        transform: scale(1,1);
+    }
+
+    100%{
+        transform: scale(.85,);
+    }
+}
+
+.show-menu{
+    top: 0;
+}
+
+
+
+/* ============= MEDIAS ============== */
+@media screen and (max-width: 327px){
+    .home{
+        padding-top: 6rem;
+    }
+}
+
+
+@media screen and (min-width: 767px){
+    .nav{
+        height: calc(var(--cabecalho-altura) + 1.5rem);
+    }
+
+
+    .nav__toggle, .nav__close{
+        display: none;
+    }
+
+    .nav__lista{
+        flex-direction: row;
+        column-gap: 3.5rem;
+    }
+}
+
+
+
+@media screen and (max-width: 767px){
+
+    .nav__menu{
+        position: fixed;
+        background-color: var(--cor-fundo-secund);
+        left: 0;
+        top: -100%;
+        width: 100%;
+        padding: 5rem 0;
+        border-radius: 0 0 1.5rem 1.5rem;
+        box-shadow: 0 2px 4px hsla(38, 4%, 15%, .15);
+        transition: .4s;
+    }
+
+
+}
+
+
+.show-menu{
+    top: 0;
+}
+
+
+
+@media screen and (min-width: 1024px){
+    .home__container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 2rem;
+    }
+
+    .home__data{
+        text-align: initial;
+    }
+
+
+    .home__img img{
+        width: 360px;
+    }
+
+    .home__fundo{
+        width: 250px;
+        height: 40px;
+    }
+}
+
+
+
+@media screen and (min-width: 1450px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home{
+        padding-top:  20rem;
+        min-height: 100vh;
+    }
+}
+
+
+
+@media screen and (min-width: 2048px){
+    body{
+       zoom: 1.7;
+    }
+
+    .home{
+        height: initial;
+        row-gap: 4rem;
+    }
+}
+
+
+
+
+@media screen and (min-width: 3840px){
+    body{
+       zoom: 3.1;
+    }
+
+    .home{
+        height: initial;
+        row-gap: 4rem;
+    }
+}
+
+
