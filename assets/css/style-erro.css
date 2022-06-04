@@ -1,6 +1,6 @@
 /* ============= NAV CABECALHO ============== */
 .cabecalho{
-    background-color: var(--cor-fundo-secund);
+    background-color: var(--cor-fundo-primary);
     position: fixed;
     width: 100%;
     top: 0;
@@ -13,6 +13,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav__lista--link:hover, .nav__lista--link:focus{
+    color: #0b0a0a;
 }
 
 .nav__logo, .nav__toggle{
@@ -49,7 +53,7 @@
 /* ============= HOME ============== */
 .home{
     display: grid;
-    padding: 7rem 0 2rem;
+    padding: 8rem 0 2rem;
     height: 100vh;
 }
 
@@ -74,8 +78,8 @@
 
 
 .home__botao{
-    background: var(--plano-azul);
-    color: #fff;
+    background: #403a3a;
+    color: #bfbfbf;
     display: inline-block;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
@@ -86,13 +90,15 @@
 }
 
 .home__botao:hover, .home__botao:focus{
-    box-shadow: 0 4px 12px hsla(38, 69%, 8%, .2);
+    box-shadow: 0 4px 12px rgba(27, 20, 6, 0.2);
+    background-color: #dddddd;
+    color: #403a3a;
 }
 
 
 .home__img img{
     width: 230px;
-    animation: floaty 2s infinite alternate;
+    animation: floaty 2.4s infinite alternate;
 }
 
 
@@ -108,7 +114,7 @@
     height: 24px;
     border: none;
     filter: blur(6px);
-    animation: shadow 2s infinite alternate;
+    animation: shadow 2.4s infinite alternate;
     justify-self: center;
     margin-left: 3rem;
 }
@@ -145,7 +151,7 @@
     }
 
     100%{
-        transform: translateY(15px);
+        transform: translateY(18px);
     }
 }
 
@@ -153,11 +159,11 @@
 
 @keyframes shadow{
     0%{
-        transform: scale(1,1);
+        transform: scale(.8);
     }
 
     100%{
-        transform: scale(.85,);
+        transform: scale(1,1);
     }
 }
 
@@ -197,7 +203,7 @@
 
     .nav__menu{
         position: fixed;
-        background-color: var(--cor-fundo-secund);
+        background-color: var(--cor-fundo-primary);
         left: 0;
         top: -100%;
         width: 100%;
@@ -248,7 +254,7 @@
     }
 
     .home{
-        padding-top:  20rem;
+        padding-top:  16rem;
         min-height: 100vh;
     }
 }

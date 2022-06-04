@@ -4,72 +4,40 @@
 :root{
     --cabecalho-altura: 3.5rem;
 
-
-    --titulo-cor: #0b0a0a;
-    --texto-cor: #403a3a;
-    --texto-cor-light: #707070;
-    --container-cor: #fafafa;
-    --contianer-cor-alt: #f0efef;
-    --body-cor: #fcfcfc;
-
-    --body-fonte: 'Poppins', sans-serif;
-    --body-fonte-2: 'Montserrat', sans-serif;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .94rem;
-    --pequeno-font-size: .875rem;
-    --pequeno2-font-size: .81rem;
-
-
-    --fonte-media: 500;
-    --fonte-semi-bold: 600;
-
-    --mb-1: .5rem;
-    --mb-2: 1rem;
-    --mb-3: 1.5rem;
-
-
-    --z-tooltip: 10;
-    --z-fixed: 100;
-
-    --background-sub-btn: rgb(46, 43, 42);
-	--fundo-card: #222222;
-	
-	--cor-menu: #1b1b1b;
-	--cor-fundo: #262626;
-	--cor-fundo-secund: #404040;
-
-	--cor-selecionado: #a52232;
-	--cor-hover: #151515;
-	--texto-vermelho: #94090D;
-	--cor-azul: #4A5FD9;
-
-	--plano-azul: #155266;
-	--plano-roxo: #7f2da0;
-	--plano-vermelho: #992727;
-	--plano-lilas: #381566;
-	--plano-verde: #156627;
-
-	
-	
-	--cor-sombra: rgba(0,0,0,0.7);
-	--sombra-tela: 5px 5px 10px rgba(0, 0, 0, 0.4);
-
+    --cor-fundo-primary: #f0efef;
+    --btn-azul: #155266;
 
     --font-size-grande: 2.4rem;
     --font-size-normal: 1rem;
     --font-size-pequeno: .7rem;
-}
+    --body-fonte: 'Poppins', sans-serif;
+    --body-fonte-2: 'Montserrat', sans-serif;
 
 
-body.dark-theme{
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+
+
+    --cor-black: #0b0a0a;
+    --cor-cinza: #403a3a;
+    --cor-cinza-light: #e2dada;
+    --cor-branco1: #fafafa;
+    --cor-branco2: #f0efef;
+    --cor-branco3: #fcfcfc;
+
+
     --titulo-cor: #f2f2f2;
     --texto-cor: #bfbfbf;
     --container-cor: #212121;
     --contianer-cor-alt: #181616;
     --body-cor: #2b2b2b;
+
+    
 }
+
+
+
 
 *{
 	box-sizing: border-box;
@@ -79,11 +47,11 @@ body.dark-theme{
 
 
 body{
-	color: #fff;
+	color: #403a3a;
 	align-items: center;
 	justify-content: center;
 	font-family: var(--body-fonte);
-	background-color: var(--texto-cor-light);
+	background-color: var(--cor-cinza-light);
 }
 
 
