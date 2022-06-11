@@ -1,1 +1,122 @@
 @import url('./style.css');
+
+.container{
+    max-width: 768px;
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+
+.header{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: var(--z-fixed);
+    border-color: var(--body-cor);
+}
+
+
+.nav{
+    min-width: 968px;
+    height: var(--cabecalho-altura);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav__logo, .nav__toggle{
+    color: var(--titulo-cor);
+    font-weight: var(--fonte-media);
+}
+
+
+.nav__logo:is(:hover, :focus){
+    color: var(--texto-cor);
+}
+
+
+.nav__toggle{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+
+.nav__toggle:is(:hover, :focus){
+    color: var(--texto-cor);
+}
+
+
+.nav__item{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--pequeno-font-size);
+    color: var(--titulo-cor);
+    font-weight: var(--fonte-media);
+}
+
+.nav__link:is(:hover, :focus){
+    color: var(--texto-cor);
+}
+
+.nav__icon{
+    font-size: 1.2rem;
+}
+
+.nav__close{
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--titulo-cor);
+}
+
+
+.nav__close:is(:hover,:focus){
+    color: var(--texto-cor);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .nav__menu{
+        position: fixed;
+        bottom: -100;
+        left: 0;
+        width: 100%;
+        border-color: var(--body-cor);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .3s;
+    }
+}

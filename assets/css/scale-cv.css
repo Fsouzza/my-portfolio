@@ -1,0 +1,142 @@
+/* ------------ CLASSES REDUCE SIZE AND PRINT ON A4 ----------*/
+.scale-cv .change-theme, .scale-cv .generate-pdf{
+    display: none;
+}
+
+.scale-cv .bd-container{
+    max-width: 595px;
+}
+
+.scale-cv .section{
+    padding: 1.2rem 0 .80rem;
+}
+
+.scale-cv .section-title{
+    margin-bottom: .65rem;
+}
+
+.scale-cv .resume__left, .scale-cv .resume__right{
+    padding: 0 .9rem;
+}
+
+.scale-cv .home__img{
+    width: 86px;
+    height: 86px;
+}
+
+.scale-cv .home__container{
+    gap: .8rem;
+}
+
+.scale-cv .home__data{
+    gap: .20rem;
+}
+
+.scale-cv .home__address, .scale-cv .social__container{
+    gap: .65rem;
+}
+
+.scale-cv .home__icon, .scale-cv .social__icon, .scale-cv .interests__icon{
+    font-size: 1rem;
+}
+
+.scale-cv .education__container, .scale-cv .experience__container, .scale-cv .certificate__container{
+    gap: .80rem;
+}
+
+.scale-cv .education__time, .scale-cv .experience__time{
+    padding-right: .5rem;
+}
+
+.scale-cv .education__rounder, .scale-cv .experience__rounder{
+    width: 11px;
+    height: 11px;
+    margin-top: .3rem;
+}
+
+.scale-cv .education__line, .scale-cv .experience__line{
+    width: 1px;
+    height: 100%;
+    transform: translate(5px, 0);
+}
+
+.scale-cv .education__data, .scale-cv .experience__data{
+    gap: .20rem;
+}
+
+.scale-cv .skills__name{
+    margin-bottom: 0;
+}
+
+.scale-cv .interests__container{
+    column-gap: 1.75rem;
+    row-gap: .22rem;
+}
+
+.scale-cv .languages__content{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.scale-cv .bd-grid{
+    row-gap: .45rem;
+}
+
+
+.scale-cv .interests__content{
+    margin-top: .75rem;
+}
+
+.scale-cv .translate-link{
+    display: none;
+}
+
+.scale-cv .languages__name{
+    margin-bottom: .25rem;
+}
+
+
+
+/* ----------- Generate PDF Button -------------*/
+.generate-pdf{
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    font-size: 1.5rem;
+    color: var(--texto-cor);
+    cursor: pointer;
+}
+
+
+.generate-pdf:hover{
+    color: var(--titulo-cor);
+}
+
+
+.generate-pdf:focus{
+    color: var(--titulo-cor);
+}
+
+
+
+/* ----------- Dark Button -------------*/
+body.scale-cv{
+    --h1-font-size: .80rem;
+    --h2-font-size: .80rem;
+    --h3-font-size: .70rem;
+    --normal-font-size: .70rem;
+    --pequeno-font-size: .65rem;
+    --pequeno2-font-size: .60rem;
+}
+
+
+
+
+
+@media screen and (min-width: 968px){
+    .generate-pdf{
+        display: inline-block;
+    }
+}

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root{
+    --cabecalho-altura: 3rem;
+    --hue-color: ;
+
+
+    --titulo-cor: #0b0a0a;
+    --texto-cor: #403a3a;
+    --texto-cor-light: #707070;
+    --container-cor: #fafafa;
+    --contianer-cor-alt: #f0efef;
+    --body-cor: #fcfcfc;
+
+    --body-fonte: 'Poppins', sans-serif;
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .94rem;
+    --pequeno-font-size: .875rem;
+    --pequeno2-font-size: .81rem;
+
+
+    --fonte-media: 500;
+    --fonte-semi-bold: 600;
+
+    --mb-0-25: .25rem;
+    --mb-0-75: .75rem;
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-2-5: 1.25rem;
+    --mb-3: 1.5rem;
+
+
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+
+*, ::before,::after{
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    box-sizing: border-box;
+    margin: 0 0 var(--cabecalho-altura) 0;
+    padding: 0;
+    font-family: var(--body-fonte);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-cor);
+    color: var(--texto-cor);
+}
+
+
+h1,h2,h3,ul,p{
+    margin: 0;
+}
+
+
+h1,h2,h3,h4{
+    color: var(--titulo-cor);
+    font-weight: var(--fonte-media);
+}
+
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.section{
+    padding: 1.5rem 0;
+}
+
+.section-title{
+    font-size: var(--h2-font-size);
+    color: var(--titulo-cor);
+    font-weight: var(--fonte-semi-bold);
+    text-transform: uppercase;
+    letter-spacing: .35rem;
+    margin-bottom: var(--mb-3);
+}
+
+
+.section-subtitle{
+    display: block;
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+
+.section-title, .section-subtitle{
+    text-align: center;
+}
+
+
+
+
+
+/* ------------ VARIAVEL PARA DARK THEME ----------*/
+body.dark-theme{
+    --titulo-cor: #f2f2f2;
+    --texto-cor: #bfbfbf;
+    --container-cor: #212121;
+    --contianer-cor-alt: #181616;
+    --body-cor: #2b2b2b;
+}
+
