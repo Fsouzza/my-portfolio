@@ -126,6 +126,7 @@
 /* ============= RODAPE ============== */
 .home__rodape{
     padding-top: 2rem;
+    margin-bottom: .6rem;
     display: flex;
     justify-content: center;
     column-gap: 1.4rem;
@@ -134,7 +135,7 @@
 }
 
 .home__rodape small{
-    font-size: .9rem;
+    font-size: .7rem;
 }
 
 .uil-instagram{
@@ -176,7 +177,7 @@
 /* ============= MEDIAS ============== */
 @media screen and (max-width: 327px){
     .home{
-        padding-top: 6rem;
+        padding-top: 5rem;
     }
 }
 
@@ -201,6 +202,11 @@
 
 @media screen and (max-width: 767px){
 
+    .home{
+        padding-top: 6rem;
+    }
+    
+
     .nav__menu{
         position: fixed;
         background-color: var(--cor-fundo-primary);
@@ -211,6 +217,10 @@
         border-radius: 0 0 1.5rem 1.5rem;
         box-shadow: 0 2px 4px hsla(38, 4%, 15%, .15);
         transition: .4s;
+    }
+
+    .home__rodape{
+        margin-bottom: 1rem;
     }
 
 

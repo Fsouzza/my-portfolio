@@ -1,0 +1,55 @@
+<HTML>
+<box-icon name='x'></box-icon>
+
+<div class="nav__btns">
+	<div class="nav__toggle" id="nav-toggle">
+		<i class="uil uil-apps"></i>
+	</div>
+</div>
+
+
+-----------------------------------------------------------------------------
+
+<CSS>
+.nav__menu{
+    	position: fixed;
+	bottom: -100;
+	left: 0;
+	width: 100%;
+	background-color: ;
+	padding: 2rem 1.5rem 4rem;
+	box-shadow: 0 -2px 4px rgba(0,0,0,.15);
+	border-radius: 1.5rem 1.5rem 0 0;
+	transition: .3s;	
+}
+
+
+.nav__close{
+	position: absolute;
+	right: 1.3rem;
+	bottom: .5rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: var();	
+}
+
+
+.nav__close:is(:hover,:focus){
+	color: var();
+}
+
+
+
+-------------------------------------------------------------------------------
+
+<JAVASCRIPT>
+
+const navMenu = document.getElementById('nav-menu'),
+navToggle = document.getElementById('nav-toggle'),
+navClose = document.getElementById('nav-close');
+
+if(navClose){
+	navClose.addEventListener('click', () => {
+		navMenu.classList.remove('show-menu')
+	})
+}
