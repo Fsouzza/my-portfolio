@@ -70,7 +70,7 @@
 }
 
 .nav__link:hover{
-    color: var(--titulo-cor);
+    color: var(--texto-cor-light);
 }
 
 .nav__icon{
