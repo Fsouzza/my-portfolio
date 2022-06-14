@@ -1,3 +1,7 @@
+event.preventDefault();
+
+
+
 <HTML>
 <box-icon name='x'></box-icon>
 
