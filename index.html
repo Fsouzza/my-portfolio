@@ -21,7 +21,7 @@
 
     <header class="l-header" id="header">
         <nav class="nav bd-container">
-            <a href="error.html" class="nav__logo">F. Souza | Portfólio</a>
+            <a href="portfolio.html" class="nav__logo">F. Souza | Portfólio</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -59,7 +59,7 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                    <a href="./index-english.html" class="nav__link">
+                    <a href="error.html" class="nav__link" data-target='#translate' id="translate">
                         <i class='bx bxs-captions nav__icon'></i> Translate
                     </a>
                     </li>
@@ -72,396 +72,766 @@
         </nav>
     </header>
 
+    <main>
+        <div class="ptbr l-main bd-container" id="ptbr">
+            <div class="resume" id="area-cv">
+                <div class="resume__left">
+                    <!-- ========== HOME ===========-->
+                    <section class="home" id="home">
+                        <div class="home__container section bd-grid">
+                            <div class="home__data bd-grid">
+                                <img src="assets/img/Profile/perfil.jpg" alt="Foto de Perfil" class="home__img">
 
-    <main class="l-main bd-container" id="">
-         
-        <div class="resume" id="area-cv">
-            <div class="resume__left">
-                <!-- ========== HOME ===========-->
-                <section class="home" id="home">
-                    <div class="home__container section bd-grid">
-                        <div class="home__data bd-grid">
-                            <img src="assets/img/Profile/perfil.jpg" alt="Foto de Perfil" class="home__img">
+                                <h1 class="home__title">Filipe <b>Souzza</b></h1>
+                                <h3 class="home__profession">Web Developer Junior</h3>
 
-                            <h1 class="home__title">Filipe <b>Souzza</b></h1>
-                            <h3 class="home__profession">Web Developer Junior</h3>
+                                <!-- botao de download do CV> -->
+                                <div>
+                                    <a download="" href="./assets/pdf/Curriculo-Filipe-Souza.pdf" class="home__button-movil">Download</a>
+                                </div>   
+                            </div>
 
-                            <!-- botao de download do CV> -->
-                            <div>
-                                <a download="" href="./assets/pdf/Curriculo-Filipe-Souza.pdf" class="home__button-movil">Download</a>
-                            </div>   
+                            <div class="home__adress bd-grid">
+                                <span class="home__information" aria-label="Campo de endereço">
+                                    <i class='bx bx-map home__icon' ></i> Rua Jose Prestes, Manaus-AM
+                                </span>
+                                <span class="home__information" aria-label="Campo contendo o e-mail">
+                                    <i class='bx bx-envelope home__icon' ></i> filipesouzza.adm@gmail.com
+                                </span>
+                                <span class="home__information" aria-label="Campo contendo numero de telefone">
+                                    <i class='bx bx-phone home__icon' ></i> (92) 99480-2907
+                                </span>
+                            </div>
                         </div>
 
-                        <div class="home__adress bd-grid">
-                            <span class="home__information" aria-label="Campo de endereço">
-                                <i class='bx bx-map home__icon' ></i> Rua Jose Prestes, n17 Manaus-AM
-                            </span>
-                            <span class="home__information" aria-label="Campo contendo o e-mail">
-                                <i class='bx bx-envelope home__icon' ></i> filipesouzza.adm@gmail.com
-                            </span>
-                            <span class="home__information" aria-label="Campo contendo numero de telefone">
-                                <i class='bx bx-phone home__icon' ></i> (92) 99480-2907
-                            </span>
+                        <!-- botão para mudar o tema da página -->
+                        <i class='bx bx-moon change-theme' title="Tema" id="theme-button"></i>
+
+                        <!-- botão para download do curriculo -->
+                        <i class='bx bxs-download generate-pdf' title="generate PDF" id="resume-button"></i>    
+                    </section>
+
+                    <!-- ========== SOCIAL ===========-->
+                    <section class="social section">
+                        <h2 class="section-title">Mídias Sociais</h2>
+
+                        <div class="social__container bd-grid">
+                            <a href="https://www.linkedin.com/in/felipe-souza-93305a1b8/" target="_blank" class="social__link">
+                                <i class='bx bxl-linkedin social__icon' ></i> @felipe-souza
+                            </a>
+                            <a href="https://github.com/Fsouzza" target="_blank" class="social__link">
+                                <i class='bx bxl-github social__icon' ></i> @Fsouzza
+                            </a>
+                            <a href="https://www.instagram.com/lipeh.souzza/" target="_blank" class="social__link">
+                                <i class='bx bxl-instagram-alt social__icon' ></i> @lipeh.souzza
+                            </a>
+                            <a href="https://twitter.com/Lypeeh_Souza" target="_blank" class="social__link">
+                                <i class='bx bxl-twitter social__icon' ></i> @Lypeeh_Souza
+                            </a>
                         </div>
-                    </div>
+                    </section>
 
-                    <!-- botão para mudar o tema da página -->
-                    <i class='bx bx-moon change-theme' title="Tema" id="theme-button"></i>
+                    <!-- ========== PROFILE ===========-->
+                    <section class="profile section" id="profile">
+                        <h2 class="section-title">Perfil</h2>
+                        <p class="profile__description">
+                            Sou uma pessoa responsável no ambiente de trabalho, sempre buscando aprender maneiras para otimizar o trabalho. Tenho anos de experiência no ambiente administrativo, mas estou buscando novos desafios em T.I.
+                        </p>
+                    </section>
 
-                    <!-- botão para download do curriculo -->
-                    <i class='bx bxs-download generate-pdf' title="generate PDF" id="resume-button"></i>
+                    <!-- ========== EDUCATION ===========-->
+                    <section class="education section" id="education">
+                        <h2 class="section-title">Cursos</h2>
 
-                    <!-- botão para alterar a língua -->
-                    <a href="./index-english.html" class="social__link translate-link"><i class='bx bx-message-dots home__icon' title="Translate to english"></i>Translate</a> 
 
+                        <div class="education__container bd-grid">
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">INFORMÁTICA BÁSICA</h3>
+                                    <span class="education__studies">C.E. Grupo Sucesso</span>
+                                    <span class="education__year">2010</span>
+                                </div>
+                            </div>
+
+
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">HTML5 + CSS3 AVANÇADO</h3>
+                                    <span class="education__studies">Alura</span>
+                                    <span class="education__year"> abril 2022</span>
+                                </div>
+                            </div>
+
+
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">LINGUAGEM DE PROGRAMAÇÃO BÁSICA</h3>
+                                    <span class="education__studies">Alura</span>
+                                    <span class="education__year">abril 2022</span>
+                                </div>
+                            </div>
+
+
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">ACESSIBILIDADE WEB</h3>
+                                    <span class="education__studies">Alura</span>
+                                    <span class="education__year">maio 2022</span>
+                                </div>
+                            </div>
+
+
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <!-- <span class="education__line"></span> -->
+                                </div>
+
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">FRONT-END</h3>
+                                    <span class="education__studies">Alura</span>
+                                    <span class="education__year">junho 2022</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- ========== SKILSS ===========-->
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">Habilidades</h2>
+
+
+                        <div class="skills__content bd-grid">
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> HTML
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> CSS
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> JavaScript
+                                </li>
+                            </ul>
+
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> React
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Node.JS
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Angular
+                                </li>
+                            </ul>
+
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Office
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Redes
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Sistemas
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="resume__right">
                     
-                </section>
+                    <!-- ========== EXPERIENCE ===========-->
+                    <section class="experience section" id="experience">
+                        <h2 class="section-title">Experiência</h2>
 
-                <!-- ========== SOCIAL ===========-->
-                <section class="social section">
-                    <h2 class="section-title">Mídias Sociais</h2>
-
-                    <div class="social__container bd-grid">
-                        <a href="https://www.linkedin.com/in/felipe-souza-93305a1b8/" target="_blank" class="social__link">
-                            <i class='bx bxl-linkedin social__icon' ></i> @felipe-souza
-                        </a>
-                        <a href="https://github.com/Fsouzza" target="_blank" class="social__link">
-                            <i class='bx bxl-github social__icon' ></i> @Fsouzza
-                        </a>
-                        <a href="https://www.instagram.com/lipeh.souzza/" target="_blank" class="social__link">
-                            <i class='bx bxl-instagram-alt social__icon' ></i> @lipeh.souzza
-                        </a>
-                        <a href="https://twitter.com/Lypeeh_Souza" target="_blank" class="social__link">
-                            <i class='bx bxl-twitter social__icon' ></i> @Lypeeh_Souza
-                        </a>
-                    </div>
-                </section>
-
-                <!-- ========== PROFILE ===========-->
-                <section class="profile section" id="profile">
-                    <h2 class="section-title">Perfil</h2>
-                    <p class="profile__description">
-                        Sou uma pessoa responsável no ambiente de trabalho, sempre buscando aprender maneiras para otimizar o trabalho. Tenho anos de experiência no ambiente administrativo, mas estou buscando novos desafios em T.I.
-                    </p>
-                </section>
-
-                <!-- ========== EDUCATION ===========-->
-                <section class="education section" id="education">
-                    <h2 class="section-title">Cursos</h2>
+                        <div class="experience__container bd-grid">
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
 
 
-                    <div class="education__container bd-grid">
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                                <span class="education__line"></span>
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">CENTRO ENS GRUPO SUCESSO</h3>
+                                    <span class="experience__company">de 2011 até 2012 | Auxiliar de laboratório</span>
+                                    <p class="experience__description">
+                                        Controle de entrada e saída de alunos. Aplicação de provas e exercicios. Aux. Montagem e manutenção dos computadores e redes.
+                                    </p>
+                                </div>
                             </div>
 
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title">INFORMÁTICA BÁSICA</h3>
-                                <span class="education__studies">C.E. Grupo Sucesso</span>
-                                <span class="education__year">2010</span>
-                            </div>
-                        </div>
+
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
 
 
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                                <span class="education__line"></span>
-                            </div>
-
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title">HTML5 + CSS3 AVANÇADO</h3>
-                                <span class="education__studies">Alura</span>
-                                <span class="education__year"> abril 2022</span>
-                            </div>
-                        </div>
-
-
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                                <span class="education__line"></span>
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">C&I LOGISTICS</h3>
+                                    <span class="experience__company">de 2014 até 2015 | Auxiliar administrativo</span>
+                                    <p class="experience__description">
+                                        Rotinas administrativas. Recebimento e arquivamento de documentos. Controle de equipes. Auxiliar no setor de RH e financeiro.
+                                    </p>
+                                </div>
                             </div>
 
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title">LINGUAGEM DE PROGRAMAÇÃO BÁSICA</h3>
-                                <span class="education__studies">Alura</span>
-                                <span class="education__year">abril 2022</span>
+
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">CHACAL SERVICE</h3>
+                                    <span class="experience__company">de 2015 até 2016 | Assistente administrativo</span>
+                                    <p class="experience__description">
+                                        Líder na logística operacional. Acompanhamento no desempenho das equipes. Rotinas administrativas, arquivamento e faturamento.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                <!--<span class="experience__line"></span> -->
+                                </div>
+
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">CHACAL SERVICE</h3>
+                                    <span class="experience__company">de 2018 até 2022 | Assistente administrativo</span>
+                                    <p class="experience__description">
+                                        Emissão de notas fiscais e boleto. Contas a receber e a pagar. Rotinas administrativas. Controle logistico do operacional. Apoio administrativo aos setores de RH e Financeiro.
+                                    </p>
+                                </div>
                             </div>
                         </div>
+                    </section>
 
+    
+                    <!-- ========== CERTIFICATES ===========-->
+                    <section class="certificate section" id="certificates">
+                        <h2 class="section-title">Certificados</h2>
 
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                                <span class="education__line"></span>
+                        <div class="certificate__container bd-grid">
+                            <div class="certificate__content">
+                                <h3 class="certificate__title">Ensino Médio (2010)</h3>
+                                <p class="certificate__description">Certificado de conclusão do ensino médio escolar na Escola Estadual Tiradentes</p>
                             </div>
 
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title">ACESSIBILIDADE WEB</h3>
-                                <span class="education__studies">Alura</span>
-                                <span class="education__year">maio 2022</span>
-                            </div>
-                        </div>
-
-
-                        <div class="education__content">
-                            <div class="education__time">
-                                <span class="education__rounder"></span>
-                                <!-- <span class="education__line"></span> -->
+                            <div class="certificate__content">
+                                <h3 class="certificate__title">Discover trilha conectar (2022)</h3>
+                                <p class="certificate__description">trilha Conectar do Discover com carga horária de 2h30. O aprendizado inclui: fundamentos da programação, funcionamento de computadores, internet e mais.</p>
                             </div>
 
-                            <div class="education__data bd-grid">
-                                <h3 class="education__title">FRONT-END</h3>
-                                <span class="education__studies">Alura</span>
-                                <span class="education__year">junho 2022</span>
+                            <div class="certificate__content">
+                                <h3 class="certificate__title">jQuery (2022)</h3>
+                                <p class="certificate__description">Estudo de 5h com Imersão basica e avançada pela biblioteca jQuery na Workover</p>
                             </div>
                         </div>
+                    </section>
 
-                    </div>
-                </section>
-
-                <!-- ========== SKILSS ===========-->
-                <section class="skills section" id="skills">
-                    <h2 class="section-title">Habilidades</h2>
+                    <!-- ========== REFERENCES ===========-->
+                    <section class="references section" id="references">
+                        <h2 class="section-title">Referências</h2>
 
 
-                    <div class="skills__content bd-grid">
-                        <ul class="skills__data">
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> HTML
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> CSS
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> JavaScript
-                            </li>
-                        </ul>
+                        <div class="references__container bd-grid">
+                            <div class="references__content bd-grid">
+                                <span class="references__subtitle">Diretor</span>
+                                <h3 class="references__title">Sr. Alerrandro Mikhail</h3>
+                                <ul class="references__contact">
+                                    <li>Telefone: +55 92 98225-0006</li>
+                                    <li>Email: comercial@chacalservice.com.br</li>
+                                </ul>
+                            </div>
 
-                        <ul class="skills__data">
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> React
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> Node.JS
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> Angular
-                            </li>
-                        </ul>
+                            <div class="references__content bd-grid">
+                                <span class="references__subtitle">Surpevisor Log</span>
+                                <h3 class="references__title">Sr. Mauricio</h3>
+                                <ul class="references__contact">
+                                    <li>Telefone: +55 92 98225-0205</li>
+                                    <li>Email: logistica@speed.com.br</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
 
-                        <ul class="skills__data">
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> Office
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> Redes
-                            </li>
-                            <li class="skills__name">
-                                <span class="skills__circle"></span> Sistemas
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+                    <!-- ========== LANGUAGES ===========-->
+                    <section class="languages section">
+                        <h2 class="section-title">Idiomas</h2>
+
+
+                        <div class="languages__container">
+                            <ul class="languages__content bd-grid">
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> Português
+                                </li>
+
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> Inglês
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- ========== INTERESSES ===========-->
+                    <section class="interests section">
+                        <h2 class="section-title">Interesses</h2>
+
+
+                        <div class="interests__container bd-grid">
+                            <div class="interests__content">
+                                <i class='bx bx-headphone interests__icon' ></i>
+                                <span class="interests__name">Música</span>
+                            </div>
+
+                            <div class="interests__content">
+                                <i class='bx bxs-book interests__icon' ></i>
+                                <span class="interests__name">Leitura</span>
+                            </div>
+
+                            <div class="interests__content">
+                                <i class='bx bxs-plane-alt interests__icon' ></i>
+                                <span class="interests__name">Viagem</span>
+                            </div>
+
+                            <div class="interests__content">
+                                <i class='bx bx-basketball interests__icon' ></i>
+                                <span class="interests__name">Basquete</span>
+                            </div>
+
+                            <div class="interests__content">
+                                <i class='bx bxs-game interests__icon' ></i>
+                                <span class="interests__name">Jogos</span>
+                            </div>
+
+                            <div class="interests__content">
+                                <i class='bx bxs-planet interests__icon'></i>
+                                <span class="interests__name">Universo</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
+        </div>
 
-            <div class="resume__right">
-                
-                <!-- ========== EXPERIENCE ===========-->
-                <section class="experience section" id="experience">
-                    <h2 class="section-title">Experiência</h2>
-
-                    <div class="experience__container bd-grid">
-                        <div class="experience__content">
-                            <div class="experience__time">
-                                <span class="experience__rounder"></span>
-                                <span class="experience__line"></span>
+        <div class="english l-main bd-container" id="english">
+            <div class="resume" id="area-cv">
+                <div class="resume__left">
+                    <!-- ========== HOME ===========-->
+                    <section class="home" id="home">
+                        <div class="home__container section bd-grid">
+                            <div class="home__data bd-grid">
+                                <img src="assets/img/Profile/perfil.jpg" alt="Foto de Perfil" class="home__img">
+    
+                                <h1 class="home__title">Filipe <b>Souzza</b></h1>
+                                <h3 class="home__profession">Web Developer</h3>
+    
+                                <!-- botao de download do CV> -->
+                                <div>
+                                    <a download="" href="./assets/pdf/resume-en.pdf" class="home__button-movil">Download</a>
+                                </div>   
                             </div>
-
-
-                            <div class="experience__data bd-grid">
-                                <h3 class="experience__title">CENTRO ENS GRUPO SUCESSO</h3>
-                                <span class="experience__company">de 2011 até 2012 | Auxiliar de laboratório</span>
-                                <p class="experience__description">
-                                    Controle de entrada e saída de alunos. Aplicação de provas e exercicios. Aux. Montagem e manutenção dos computadores e redes.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div class="experience__content">
-                            <div class="experience__time">
-                                <span class="experience__rounder"></span>
-                                <span class="experience__line"></span>
-                            </div>
-
-
-                            <div class="experience__data bd-grid">
-                                <h3 class="experience__title">C&I LOGISTICS</h3>
-                                <span class="experience__company">de 2014 até 2015 | Auxiliar administrativo</span>
-                                <p class="experience__description">
-                                    Rotinas administrativas. Recebimento e arquivamento de documentos. Controle de equipes. Auxiliar no setor de RH e financeiro.
-                                </p>
+    
+                            <div class="home__adress bd-grid">
+                                <span class="home__information">
+                                    <i class='bx bx-map home__icon' ></i> Street Jose Prestes, Amazonas-Brazil
+                                </span>
+                                <span class="home__information">
+                                    <i class='bx bx-envelope home__icon' ></i> filipesouzza.adm@gmail.com
+                                </span>
+                                <span class="home__information">
+                                    <i class='bx bx-phone home__icon' ></i> +55 (92) 99280-2907
                             </div>
                         </div>
-
-
-                        <div class="experience__content">
-                            <div class="experience__time">
-                                <span class="experience__rounder"></span>
-                                <span class="experience__line"></span>
+    
+                        <!-- botão para mudar o tema da página -->
+                        <i class='bx bx-moon change-theme' title="Tema" id="theme-button"></i>
+    
+                        <!-- botão para download do curriculo -->
+                        <i class='bx bxs-download generate-pdf' title="generate PDF" id="resume-button"></i>
+                    </section>
+    
+                    <!-- ========== SOCIAL ===========-->
+                    <section class="social section">
+                        <h2 class="section-title">SOCIAL</h2>
+    
+                        <div class="social__container bd-grid">
+                            <a href="https://www.linkedin.com/in/felipe-souza-93305a1b8/" target="_blank" class="social__link">
+                                <i class='bx bxl-linkedin social__icon' ></i> @felipe-souza
+                            </a>
+                            <a href="https://github.com/Fsouzza" target="_blank" class="social__link">
+                                <i class='bx bxl-github social__icon' ></i> @Fsouzza
+                            </a>
+                            <a href="https://www.instagram.com/lipeh.souzza/" target="_blank" class="social__link">
+                                <i class='bx bxl-instagram-alt social__icon' ></i> @lipeh.souzza
+                            </a>
+                            <a href="https://twitter.com/Lypeeh_Souza" target="_blank" class="social__link">
+                                <i class='bx bxl-twitter social__icon' ></i> @Lypeeh_Souza
+                            </a>
+                        </div>
+                    </section>
+    
+                    <!-- ========== PROFILE ===========-->
+                    <section class="profile section" id="profile">
+                        <h2 class="section-title">Profile</h2>
+                        <p class="profile__description">
+                            I'm a person, responsible with their work during working hours. Finish various technical and higher studies at large universites. I have several years of experience and achievements in the labor field.
+                        </p>
+                    </section>
+    
+                    <!-- ========== EDUCATION ===========-->
+                    <section class="education section" id="education">
+                        <h2 class="section-title">Education</h2>
+    
+    
+                        <div class="education__container bd-grid">
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+    
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">BASIC INFORMATION TECHNOLOGY</h3>
+                                    <span class="education__studies">Grupo Sucesso</span>
+                                    <span class="education__year">2010</span>
+                                </div>
                             </div>
-
-
-                            <div class="experience__data bd-grid">
-                                <h3 class="experience__title">CHACAL SERVICE</h3>
-                                <span class="experience__company">de 2015 até 2016 | Assistente administrativo</span>
-                                <p class="experience__description">
-                                    Líder na logística operacional. Acompanhamento no desempenho das equipes. Rotinas administrativas, arquivamento e faturamento.
-                                </p>
+    
+    
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+    
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">ADVANCED HTML5 + CSS3</h3>
+                                    <span class="education__studies">Alura</span>
+                                    <span class="education__year"> april 2022</span>
+                                </div>
                             </div>
-                        </div>
-
-
-                        <div class="experience__content">
-                            <div class="experience__time">
-                                <span class="experience__rounder"></span>
-                             <!--<span class="experience__line"></span> -->
+    
+    
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+    
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">BASIC PROGRAMMING LANGUAGE</h3>
+                                    <span class="education__studies">Alura</span>
+                                    <span class="education__year">april 2022</span>
+                                </div>
                             </div>
-
-
-                            <div class="experience__data bd-grid">
-                                <h3 class="experience__title">CHACAL SERVICE</h3>
-                                <span class="experience__company">de 2018 até 2022 | Assistente administrativo</span>
-                                <p class="experience__description">
-                                    Emissão de notas fiscais e boleto. Contas a receber e a pagar. Rotinas administrativas. Controle logistico do operacional. Apoio administrativo aos setores de RH e Financeiro.
-                                </p>
+    
+    
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+    
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">WEB ACCESSIBILITY</h3>
+                                    <span class="education__studies">Alura</span>
+                                    <span class="education__year">may 2022</span>
+                                </div>
                             </div>
+    
+    
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <!-- <span class="education__line"></span> -->
+                                </div>
+    
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">FRONT-END</h3>
+                                    <span class="education__studies">Alura</span>
+                                    <span class="education__year">june 2022</span>
+                                </div>
+                            </div>
+    
                         </div>
-                    </div>
-                </section>
-
- 
-                <!-- ========== CERTIFICATES ===========-->
-                <section class="certificate section" id="certificates">
-                    <h2 class="section-title">Certificados</h2>
-
-                    <div class="certificate__container bd-grid">
-                        <div class="certificate__content">
-                            <h3 class="certificate__title">Ensino Médio (2010)</h3>
-                            <p class="certificate__description">Certificado de conclusão do ensino médio escolar na Escola Estadual Tiradentes</p>
-                        </div>
-
-                        <div class="certificate__content">
-                            <h3 class="certificate__title">Discover trilha conectar (2022)</h3>
-                            <p class="certificate__description">trilha Conectar do Discover com carga horária de 2h30. O aprendizado inclui: fundamentos da programação, funcionamento de computadores, internet e mais.</p>
-                        </div>
-
-                        <div class="certificate__content">
-                            <h3 class="certificate__title">jQuery (2022)</h3>
-                            <p class="certificate__description">Estudo de 5h com Imersão basica e avançada pela biblioteca jQuery na Workover</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- ========== REFERENCES ===========-->
-                <section class="references section" id="references">
-                    <h2 class="section-title">Referências</h2>
-
-
-                    <div class="references__container bd-grid">
-                        <div class="references__content bd-grid">
-                            <span class="references__subtitle">Diretor</span>
-                            <h3 class="references__title">Sr. Alerrandro Mikhail</h3>
-                            <ul class="references__contact">
-                                <li>Telefone: +55 92 98225-0006</li>
-                                <li>Email: comercial@chacalservice.com.br</li>
+                    </section>
+    
+                    <!-- ========== SKILSS ===========-->
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">Skills</h2>
+    
+    
+                        <div class="skills__content bd-grid">
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> HTML
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> CSS
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> JS
+                                </li>
+                            </ul>
+    
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> React
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Node.JS
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Angular
+                                </li>
+                            </ul>
+    
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Office
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Networks
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Systems
+                                </li>
                             </ul>
                         </div>
-
-                        <div class="references__content bd-grid">
-                            <span class="references__subtitle">Surpevisor Log</span>
-                            <h3 class="references__title">Sr. Mauricio</h3>
-                            <ul class="references__contact">
-                                <li>Telefone: +55 92 98225-0205</li>
-                                <li>Email: logistica@speed.com.br</li>
+                    </section>
+    
+                </div>
+    
+                <div class="resume__right">
+    
+                    <!-- ========== EXPERIENCE ===========-->
+                    <section class="experience section" id="experience">
+                        <h2 class="section-title">Experience</h2>
+    
+                        <div class="experience__container bd-grid">
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+    
+    
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">GRUPO SUCESSO</h3>
+                                    <span class="experience__company">From 2011 to 2012 | lab assistant</span>
+                                    <p class="experience__description">
+                                        Control entry and exit of students. Application of tests and exercises. Aux. Installation and maintenance of computers and networks.
+                                    </p>
+                                </div>
+                            </div>
+    
+    
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+    
+    
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">C&I LOGISTICS</h3>
+                                    <span class="experience__company">From 2014 to 2015 | administrative assistant</span>
+                                    <p class="experience__description">
+                                        Administrative routines. Receipt and archiving of documents. Team control. Assistant in the Human Resources & finance department.
+                                    </p>
+                                </div>
+                            </div>
+    
+    
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+    
+    
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">CHACAL SERVICE</h3>
+                                    <span class="experience__company">From 2015 to 2016 | administrative assistant</span>
+                                    <p class="experience__description">
+                                        Leader in operational logistics. Monitoring the performance of teams. Administrative routines, archiving and monthly billing.
+                                    </p>
+                                </div>
+                            </div>
+    
+    
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                 <!--<span class="experience__line"></span> -->
+                                </div>
+    
+    
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">CHACAL SERVICE</h3>
+                                    <span class="experience__company">From 2018 to 2022 | administrative assistant</span>
+                                    <p class="experience__description">
+                                        Issuing invoices. Accounts receivable and payable. Administrative routines. Operational logistical control. Administrative support to the HR and Finance sectors.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+    
+     
+                    <!-- ========== CERTIFICATES ===========-->
+                    <section class="certificate section" id="certificates">
+                        <h2 class="section-title">Certificates</h2>
+    
+                        <div class="certificate__container bd-grid">
+                            <div class="certificate__content">
+                                <h3 class="certificate__title">High School (2010)</h3>
+                                <p class="certificate__description">Certificate of completion of high school education at Tiradentes State School</p>
+                            </div>
+    
+                            <div class="certificate__content">
+                                <h3 class="certificate__title">Discover path conectar (2022)</h3>
+                                <p class="certificate__description">Successfully completed with a duration of 2h30. Learning the concepts of: intro to programming, basics of hardware and software, internet, servers, and more.</p>
+                            </div>
+    
+                            <div class="certificate__content">
+                                <h3 class="certificate__title">jQuery (2022)</h3>
+                                <p class="certificate__description">5h Study with Basic and Advanced Immersion by the jQuery library at Workover</p>
+                            </div>
+                        </div>
+                    </section>
+    
+                    <!-- ========== REFERENCES ===========-->
+                    <section class="references section" id="references">
+                        <h2 class="section-title">References</h2>
+    
+    
+                        <div class="references__container bd-grid">
+                            <div class="references__content bd-grid">
+                                <span class="references__subtitle">Sr. Director</span>
+                                <h3 class="references__title">Mr. Alerrandro Mikhail</h3>
+                                <ul class="references__contact">
+                                    <li>Phone: +55 92 98225-0006</li>
+                                    <li>Email: comercial@chacalservice.com.br</li>
+                                </ul>
+                            </div>
+    
+                            <div class="references__content bd-grid">
+                                <span class="references__subtitle">Sr. Surpevisor</span>
+                                <h3 class="references__title">Mr. Mauricio</h3>
+                                <ul class="references__contact">
+                                    <li>Phone: +55 92 98225-0205</li>
+                                    <li>Email: logistica@speed.com.br</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+    
+                    <!-- ========== LANGUAGES ===========-->
+                    <section class="languages section">
+                        <h2 class="section-title">Languages</h2>
+    
+    
+                        <div class="languages__container">
+                            <ul class="languages__content bd-grid">
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> Portuguese (pt-br)
+                                </li>
+    
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> English
+                                </li>
                             </ul>
                         </div>
-                    </div>
-                </section>
-
-                <!-- ========== LANGUAGES ===========-->
-                <section class="languages section">
-                    <h2 class="section-title">Idiomas</h2>
-
-
-                    <div class="languages__container">
-                        <ul class="languages__content bd-grid">
-                            <li class="languages__name">
-                                <span class="languages__circle"></span> Português
-                            </li>
-
-                            <li class="languages__name">
-                                <span class="languages__circle"></span> Inglês
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-                <!-- ========== INTERESSES ===========-->
-                <section class="interests section">
-                    <h2 class="section-title">Interesses</h2>
-
-
-                    <div class="interests__container bd-grid">
-                        <div class="interests__content">
-                            <i class='bx bx-headphone interests__icon' ></i>
-                            <span class="interests__name">Música</span>
+                    </section>
+    
+                    <!-- ========== INTERESSES ===========-->
+                    <section class="interests section">
+                        <h2 class="section-title">Interests</h2>
+    
+    
+                        <div class="interests__container bd-grid">
+                            <div class="interests__content">
+                                <i class='bx bx-headphone interests__icon' ></i>
+                                <span class="interests__name">Music</span>
+                            </div>
+    
+                            <div class="interests__content">
+                                <i class='bx bxs-book interests__icon' ></i>
+                                <span class="interests__name">Read</span>
+                            </div>
+    
+                            <div class="interests__content">
+                                <i class='bx bxs-plane-alt interests__icon' ></i>
+                                <span class="interests__name">Travel</span>
+                            </div>
+    
+                            <div class="interests__content">
+                                <i class='bx bx-basketball interests__icon' ></i>
+                                <span class="interests__name">Basket</span>
+                            </div>
+    
+                            <div class="interests__content">
+                                <i class='bx bxs-game interests__icon' ></i>
+                                <span class="interests__name">Games</span>
+                            </div>
+    
+                            <div class="interests__content">
+                                <i class='bx bxs-planet interests__icon'></i>
+                                <span class="interests__name">Universe</span>
+                            </div>
                         </div>
-
-                        <div class="interests__content">
-                            <i class='bx bxs-book interests__icon' ></i>
-                            <span class="interests__name">Leitura</span>
-                        </div>
-
-                        <div class="interests__content">
-                            <i class='bx bxs-plane-alt interests__icon' ></i>
-                            <span class="interests__name">Viagem</span>
-                        </div>
-
-                        <div class="interests__content">
-                            <i class='bx bx-basketball interests__icon' ></i>
-                            <span class="interests__name">Basquete</span>
-                        </div>
-
-                        <div class="interests__content">
-                            <i class='bx bxs-game interests__icon' ></i>
-                            <span class="interests__name">Jogos</span>
-                        </div>
-
-                        <div class="interests__content">
-                            <i class='bx bxs-planet interests__icon'></i>
-                            <span class="interests__name">Universo</span>
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
         </div>
     </main>
-
+    
     <!-- =======SCROLL TO TOP ============ -->
     <a href="#" class="scrolltop" id="scroll-top">
         <i class='bx bxs-up-arrow-alt scrolltop__icon' ></i>
     </a>
 
-    
+    <script src="./assets/js/html2pdf.bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/scroll.js"></script>
     <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/dark-theme.js"></script>
-    <script src="./assets/js/html2pdf.bundle.min.js"></script>
+    <script src="./assets/js/translate.js"></script>
+
+    
 </body>
 </html>

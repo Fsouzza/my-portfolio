@@ -1,5 +1,9 @@
 
 /* ======= ESTILIZACAO DA PAGINA PRINCIPAL ====== */
+.english{
+    display: none;
+}
+
 
 /* ----------- SOCIAL -------------*/
 .social__container{
