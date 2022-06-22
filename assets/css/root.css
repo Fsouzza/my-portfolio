@@ -7,6 +7,7 @@
 
     --titulo-cor: #0b0a0a;
     --texto-cor: #403a3a;
+    --texto-cor2: #403a3a;
     --texto-cor-light: #707070;
     --container-cor: #fafafa;
     --contianer-cor-alt: #f0efef;
@@ -124,6 +125,7 @@ img{
 body.dark-theme{
     --titulo-cor: #f2f2f2;
     --texto-cor: #bfbfbf;
+    --texto-cor2:#f2f2f2;
     --container-cor: #212121;
     --contianer-cor-alt: #181616;
     --body-cor: #2b2b2b;

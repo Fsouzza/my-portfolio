@@ -183,6 +183,7 @@
 
 
 @media screen and (min-width: 767px){
+
     .nav{
         height: calc(var(--cabecalho-altura) + 1.5rem);
     }

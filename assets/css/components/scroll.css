@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .34rem;
+    padding: .4rem;
     background-color: var(--contianer-cor-alt);
     border-radius: .4rem;
     z-index: var(--z-tooltip);
@@ -14,9 +14,10 @@
 }
 
 .scrolltop__icon{
-    font-size: 1.3rem;
-    color: var(--texto-cor);
+    font-size: 1.4rem;
+    color: var(--texto-cor2);
 }
+
 
 .show-scroll{
     visibility: visible;
