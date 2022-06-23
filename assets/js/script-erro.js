@@ -18,15 +18,3 @@ if (closeMenu){
         menu.classList.remove('show-menu');
     });
 };
-
-
-
-/* =========== REMOVER MENU MOBILE ========== */
-const navLink = document.getElementById('nav__link')
-
-function acaoLink(){
-    const navMenu = document.getElementById('nav-menu')
-    navMenu.classList.remove('show-menu')
-}
-
-navLink.forEach(n => n.addEventListener('click', acaoLink))

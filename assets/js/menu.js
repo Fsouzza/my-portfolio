@@ -20,7 +20,8 @@ showMenu('nav-toggle','nav-menu');
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
+    const navMenu = document.getElementById('nav-menu');
+
     
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu');
@@ -28,3 +29,19 @@ function linkAction(){
 
 
 navLink.forEach(n => n.addEventListener('click', linkAction));
+
+
+
+/* const lista = document.querySelectorAll('.nav__item');
+
+
+function ativarSection(){
+	lista.forEach((item) =>
+	item.classList.remove('active-link'));
+	this.classList.add('active-link');
+}
+
+
+// ------> ATIVAR LINK MENU <------ //
+lista.forEach((item) =>
+item.addEventListener('click', ativarSection));*/

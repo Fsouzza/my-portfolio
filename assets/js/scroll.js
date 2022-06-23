@@ -1,8 +1,9 @@
+
 /* ----------- SCROLL TOP SHOW -------------*/
 function scrollTop(){
     const scrollTop = document.getElementById('scroll-top');
 
-    if(this.scrollY >= 200) scrollTop.classList.add('show-scroll');
+    if(this.scrollY >= 500) scrollTop.classList.add('show-scroll');
     else scrollTop.classList.remove('show-scroll')
 }
 
@@ -10,7 +11,7 @@ window.addEventListener('scroll', scrollTop);
 
 
 
-/* ----------- SCROLL ACTIVE LINK -------------*/
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -28,4 +29,4 @@ function scrollActive(){
         }
     })
 }
-window.addEventListener('scroll', scrollActive);
+window.addEventListener('scroll', scrollActive)
