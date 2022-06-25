@@ -1,3 +1,6 @@
+@import url("./root-erro.css");
+
+
 /* ============= NAV CABECALHO ============== */
 .cabecalho{
     background-color: var(--cor-fundo-primary);
