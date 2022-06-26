@@ -73,9 +73,20 @@
         </nav>
     </header>
 
+
     <main class="main">
+
         <!-- ====== HOME ====== -->
-       <section class="home section" id="home">
+       <section class="home section container" id="home">
+            <div class="toggle-dark-mode">
+                <input type="checkbox" class='checkbox change-theme' title="Tema" id="theme-button">
+                <label for="" class="label">
+                    <i class="uil uil-moon"></i>
+                    <i class="uil uil-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
@@ -152,7 +163,6 @@
                 </div>
             </div>
        </section>
-
 
        <!-- ====== SKILLS ====== -->
         <section class="skills section" id="skills">
@@ -793,7 +803,7 @@
                     </div>
 
                     <div class="contact__information">
-                        <i class="uil uil-map-marke contact__icon"></i>
+                        <i class="uil uil-map-marker contact__icon"></i>
 
                         <div>
                             <h3 class="contact__title">Location</h3>
@@ -803,22 +813,87 @@
                 </div>
 
                 <form action="" class="contact__form grid">
-                    
+                    <div class="contact__input grid">
+                        <div class="contact__content">
+                            <label for="name" class="contact__label">Nome</label>
+                            <input id="name" type="text" class="contact__inputs">
+                        </div>
+                        <div class="contact__content">
+                            <label for="email" class="contact__label">Email</label>
+                            <input id="emaii" type="email" class="contact__inputs">
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                            <label for="titulo" class="contact__label">Project</label>
+                            <input id="titulo" type="text" class="contact__inputs">
+                    </div>
+                    <div class="contact__content">
+                            <label for="message" class="contact__label">Message</label>
+                            <textarea name="" id="message" cols="0" rows="7" class="contact__inputs"></textarea>
+                    </div>
+
+                    <div>
+                        <a href="#" class="button button--flex">
+                            Send Message
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
                 </form>
             </div>
         </section>
     </main>
     
     
-    <footer>
-        
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">F. Souza</h1>
+                    <span class="footer__subtitle">Front-End developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact Me</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://github.com/Fsouzza" class="footer__social" target="_blank">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/lipeh.souzza" class="footer__social" target="_blank">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                        
+                    <a href="https://twitter.com/Lypeeh_Souza" class="footer__social" target="_blank">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Mr Yeagger. All right reserved</p>
+        </div>
     </footer>
+
+    <!-- =======SCROLL TO TOP ============ -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bxs-up-arrow-alt scrolltop__icon' ></i>
+    </a>
 
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/actModal.js"></script>
-   
+    <script src="./assets/js/scroll.js"></script>
+    <script src="./assets/js/dark-theme.js"></script>
 </body>
 
 
