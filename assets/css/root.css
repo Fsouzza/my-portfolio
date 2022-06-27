@@ -2,16 +2,18 @@
 
 :root{
     --cabecalho-altura: 3rem;
-    --hue-color: ;
-
+    --cor-azul: rgb(62, 73, 140);
+    --cor--botao:  #ecebeb;
+    --cor-hover: #e6e7e7;
 
     --titulo-cor: #0b0a0a;
     --texto-cor: #403a3a;
-    --texto-cor2: #403a3a;
+    --texto-cor2: #3b3838;
     --texto-cor-light: #707070;
     --container-cor: #fafafa;
     --contianer-cor-alt: #ecebeb;
     --body-cor: #fcfcfc;
+    --body-cor2: #181616;
 
     --body-fonte: 'Poppins', sans-serif;
     --big-font-size: 2rem;
@@ -22,7 +24,7 @@
     --pequeno-font-size: .875rem;
     --pequeno2-font-size: .81rem;
 
-    --input-color: hsl(250,70%,96%);
+    --input-color: #ebebeb;
     --fonte-media: 500;
     --fonte-semi-bold: 600;
 
@@ -33,12 +35,9 @@
     --mb-2-5: 1.25rem;
     --mb-3: 1.5rem;
 
-
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
-
-    --cor-azul: rgb(52, 52, 179);
 }
 
 
@@ -123,12 +122,13 @@ img{
 body.dark-theme{
     --titulo-cor: #f2f2f2;
     --texto-cor: #bfbfbf;
-    --texto-cor2:#505050;
+    --texto-cor2: #F2F2F2;
     --texto-cor-light: #d1d1d1;
     --container-cor: #212121;
     --contianer-cor-alt: #181616;
     --body-cor: #2b2b2b;
     --input-color: rgb(136, 136, 139);
+    --cor-azul: rgb(52, 52, 179);
+    --cor--botao:  #777777;
+    --cor-hover: #8b8b8b;
 }
-
-
