@@ -2,9 +2,9 @@
 
 :root{
     --cabecalho-altura: 3rem;
-    --cor-azul: rgb(62, 73, 140);
-    --cor--botao:  #ecebeb;
-    --cor-hover: #e6e7e7;
+    --cor-azul: #0A4DA6;
+    --cor--botao:  #F0F2F2;
+    --cor-hover: #f0f0f0;
 
     --titulo-cor: #0b0a0a;
     --texto-cor: #403a3a;
@@ -128,7 +128,10 @@ body.dark-theme{
     --contianer-cor-alt: #181616;
     --body-cor: #2b2b2b;
     --input-color: rgb(136, 136, 139);
-    --cor-azul: rgb(52, 52, 179);
-    --cor--botao:  #777777;
-    --cor-hover: #8b8b8b;
+    --cor-azul: #056CF2;
+    --cor--botao:  #455DDC;
+    --cor-hover: #1B8EF2;
 }
+
+
+/*linear-gradient(180deg, #212121,#2F374C, #222631)*/

@@ -149,8 +149,6 @@
 }
 
 
-
-
 /* ======= BUTTONS ====== */
 .botoes-contato__div{
     display: flex;
@@ -161,7 +159,7 @@
 .button{
     display: inline-block;
     background-color: var(--cor--botao);
-    color: var(--texto-cor);
+    color: var(--texto-cor2);
     padding: 1rem;
     border-radius: .6rem;
     font-weight: var(--fonte-media);
@@ -179,15 +177,15 @@
 }
 
 .button--white{
-    background-color: var(--body-cor);
+    background-color: var(--container-cor);
     color: var(--titulo-cor);
     transition: .4s;
 }
 
 .button--white:hover{
     background-color: var(--titulo-cor);
-    color: var(--body-cor);
-    border: 1px solid var(--body-cor);
+    color: var(--contianer-cor-alt);
+    border: 1px solid var(--container-cor);
 }
 
 .button--flex{
@@ -222,14 +220,14 @@
     border-radius: .2rem;
     transition: 0.5s;
     overflow: hidden;
-    box-shadow: 0 8px 16px var(--cor--botao);
+    
 }
 
 .button--hover:hover{
     width: 220px;
     padding-right: 2.4rem;
     transition-delay: .2s;
-    box-shadow: 0 8px 16px var(--cor-hover);
+    
 }
 
 .button:hover .icon--hover{
@@ -266,7 +264,6 @@
     justify-content: center;
     align-items: center;
     border-radius: .2rem;
-    box-shadow: 0 8px 16px var(--cor--botao);
 }
 
 
@@ -736,7 +733,7 @@
 
 .project__title,
 .project__description{
-    color: var(--body-cor);
+    color: var(--container-cor);
 }
 
 .project__img{
@@ -1165,5 +1162,9 @@
 
     .contact__inputs{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project__data{
+        margin: 4rem auto;
     }
 }

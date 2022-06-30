@@ -6,12 +6,6 @@
 
 .checkbox{
     opacity: 0;
-    height: 21px;
-    width: 50px;
-    position: absolute;
-    z-index: 2;
-    margin-right: .5rem;
-    cursor: pointer;
 }
 
 .label{
@@ -27,6 +21,7 @@
     padding: .4rem;
     height: 32px;
     width: 70px;
+    cursor: pointer;
 }
 
 .uil-moon,
