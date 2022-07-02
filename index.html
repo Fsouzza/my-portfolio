@@ -60,10 +60,27 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="./pages/error.html" class="nav__link" data-target='#translate' id="translate">
+                        <div class="nav__link" data-target='#translate' id="translate">
+                            
+                            <div class="collapse">
                             <i class='bx bxs-captions nav__icon'></i>Translate
-                        </a>
-                    </li>
+                            <i class="uil uil-angle-down collapse__icon"></i>
+                            </div>
+
+                            <div class="submenu">
+                                <ul class="collapse__menu">
+                                    <li class="collapse__link">
+                                        <img src="./assets/img/icon/estados-unidos-da-america.png" class="band__icon">
+                                        <a href="./pages/error.html" class="collapse__sublink">English</a>
+                                    </li>
+                                    <li class="collapse__link">
+                                        <img src="./assets/img/icon/brasil.png" class="band__icon"> 
+                                        <a href="./pages/error.html" class="collapse__sublink">Portuguese</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </dli>
                 </ul>
             </div>
 
@@ -100,13 +117,19 @@
                         </a>
                     </div>
 
-                    <figure class="home__img box-card">
-                        <img class="home__img-foto" src="./assets/img/Profile/perfil-removebg.png">
-                        <img class="home__img-foto" src="./assets/img/Nogtisune-card.png" alt="" class="about__img">
-                    </figure>
+                    <div class="home__img box-card">
+                        <figure class="">
+                            <div class="circle"></div>
+                            <img class="profile" src="./assets/img/Profile/perfil-removebg.png">
+                        </figure>
+                        <figure class="box">
+                            <div class="portal"></div>
+                            <img class="profile" src="./assets/img/Nogtisune-card.png" alt="" class="about__img">
+                        </figure>
+                    </div>
 
                     <div class="home__data">
-                        <h1 class="home__title">Hello, I'm Filipe Souza</h1>
+                        <h1 class="home__title typing-animation">Hello, I'm Filipe Souza</h1>
                         <h3 class="home__subtitle">Front-End Developer</h3>
                         <p class="home__description">High level experience in web design and development knowledge, producing quality work</p>
 
@@ -114,8 +137,9 @@
                             <a href="#contact" class="button button--flex button--hover">
                                 <span class="span--hover">Contact Me</span><i class="uil uil-message button__icon icon--hover"></i>
                             </a>
+
                             <a href="https://wa.me/559292802907" target="_blank" title="whatsApp" class="button button--flex button--whatsapp">
-                                <i class="uil uil-whatsapp button__icon whatsapp-icon"></i>
+                                <i class="uil uil-whatsapp whatsapp-icon"></i>
                             </a>
                         </div>
                     </div>
@@ -142,29 +166,31 @@
                 </div>
 
                 <div class="about__data">
-                    <p class="about__description">Web developer, with extensive knowledge and years of
-                        experience, working in web technologies and Ui/Ux design, delivering quality work
-                    </p>
-
                     <div class="about__info">
-                        <div>
-                            <span class="about__info-title">06+</span>
+                        <div class="about__card">
+                            <i class="uil uil-atom about__info-icon"></i>
+                            <span class="about__info-title">6+</span>
                             <span class="about__info-name">Mouths <br> experience</span>
                         </div>
-                        <div>
-                            <span class="about__info-title">10+</span>
+                        <div class="about__card">
+                            <i class="uil uil-folder-open about__info-icon"></i>
+                            <span class="about__info-title">5+</span>
                             <span class="about__info-name">Completed <br> project</span>
                         </div>
-                        <div>
-                            <span class="about__info-title">02+</span>
+                        <div class="about__card">
+                            <i class="uil uil-building about__info-icon"></i>
+                            <span class="about__info-title">2+</span>
                             <span class="about__info-name">Companies <br> worked</span>
                         </div>
                     </div>
 
+                    <p class="about__description">Web developer, with extensive knowledge and years of
+                        experience, working in web technologies and Ui/Ux design, delivering quality work
+                    </p>
 
                     <div class="about__buttons">
                         <a download="" href="./assets/pdf/Curriculo-Filipe-Souza.pdf" class="button button--flex">
-                            Download CV <i class="uil uil-download-alt button__icon"></i>
+                            Download CV <i class="uil uil-import button__icon"></i>
                         </a>
                     </div>
                 </div>
@@ -234,8 +260,9 @@
                             </div>
                         </div>
                     </div>
-                
-                
+                </div>
+
+                <div>
                     <!--  SKILLS 2  -->
                     <div class="skills__content skills__close">
                         <div class="skills__header">
@@ -281,7 +308,6 @@
                             </div>
                         </div>
                     </div>
-            
                 </div>
                 
                 <div>
@@ -736,6 +762,10 @@
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
+                            <a href="" class="button button--flex button--small portfolio__button">
+                                Github
+                                <i class="uil uil-github button__icon"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -750,6 +780,10 @@
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
+                            <a href="" class="button button--flex button--small portfolio__button">
+                                Github
+                                <i class="uil uil-github button__icon"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -763,6 +797,10 @@
                             <a href="" class="button button--flex button--small portfolio__button">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                            <a href="" class="button button--flex button--small portfolio__button">
+                                Github
+                                <i class="uil uil-github button__icon"></i>
                             </a>
                         </div>
                     </div>
@@ -880,13 +918,16 @@
 
                 <ul class="footer__links">
                     <li>
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li>
                         <a href="#services" class="footer__link">Services</a>
                     </li>
                     <li>
                         <a href="#portfolio" class="footer__link">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#contact" class="footer__link">Contact Me</a>
+                        <a href="#contact" class="footer__link">ContactMe</a>
                     </li>
                 </ul>
 

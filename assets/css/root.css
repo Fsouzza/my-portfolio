@@ -1,20 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root{
-    --cabecalho-altura: 3rem;
-    --cor-azul: #0A4DA6;
-    --cor--botao:  #F0F2F2;
-    --cor-hover: #f0f0f0;
+    --gradient: linear-gradient(180deg, #b3b1b1, #bbbbbb, #ecebeb);
+    --textura: url('../img/textures/lined-paper-2.png');
+    
+    --body-cor: #ecebeb;
+    --container-cor: #fafafa;
+    --contianer-cor-alt: #d4d4d4;
+    --footer: #202026;
 
+    --cor--botao:  #dbdfdf;
+    --cor-hover: #dddcdc;
+    --cor-link: #416CA6;
+    --cor-link-hover: #dbdfdf;
+    
+
+    --cor-azul: #056CF2; 
     --titulo-cor: #0b0a0a;
     --texto-cor: #403a3a;
-    --texto-cor2: #3b3838;
+    --texto-cor2: #1b1b1b;
+    --texto-cor3: #181616;
     --texto-cor-light: #707070;
-    --container-cor: #fafafa;
-    --contianer-cor-alt: #ecebeb;
-    --body-cor: #fcfcfc;
-    --body-cor2: #181616;
-
+    
+    
+    --cabecalho-altura: 3rem;
     --body-fonte: 'Poppins', sans-serif;
     --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
@@ -24,7 +33,7 @@
     --pequeno-font-size: .875rem;
     --pequeno2-font-size: .81rem;
 
-    --input-color: #ebebeb;
+    --input-color: #c4c4c4;
     --fonte-media: 500;
     --fonte-semi-bold: 600;
 
@@ -38,6 +47,30 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
+    
+}
+
+/* ------------ VARIAVEL PARA DARK THEME ----------*/
+body.dark-theme{
+    --gradient: linear-gradient(180deg, #21578A, #1E2759, #262626);
+    --body-cor: #262626;
+    --container-cor: #4C5459;
+    --contianer-cor-alt: #323640;
+    --footer: #1a1c22;
+
+    --cor--botao:  #455DDC;
+    --cor-hover: #056CF2;
+    --cor-link-hover: #323640;
+    
+    --titulo-cor: #f2f2f2;
+    --texto-cor: #bfbfbf;
+    --texto-cor2: #F2F2F2;
+    --texto-cor-light: #d1d1d1;
+    
+    --input-color: #9498A6;
+
+    --textura: url('../img/textures/brick-wall-dark.png');
+    
 }
 
 
@@ -57,7 +90,9 @@ body{
     padding: 0;
     font-family: var(--body-fonte);
     font-size: var(--normal-font-size);
-    background-color: var(--body-cor);
+    background: var(--body-cor);
+    background-image: var(--textura);
+    background-position: cover;
     color: var(--texto-cor);
 }
 
@@ -117,21 +152,3 @@ img{
 }
 
 
-
-/* ------------ VARIAVEL PARA DARK THEME ----------*/
-body.dark-theme{
-    --titulo-cor: #f2f2f2;
-    --texto-cor: #bfbfbf;
-    --texto-cor2: #F2F2F2;
-    --texto-cor-light: #d1d1d1;
-    --container-cor: #212121;
-    --contianer-cor-alt: #181616;
-    --body-cor: #2b2b2b;
-    --input-color: rgb(136, 136, 139);
-    --cor-azul: #056CF2;
-    --cor--botao:  #455DDC;
-    --cor-hover: #1B8EF2;
-}
-
-
-/*linear-gradient(180deg, #212121,#2F374C, #222631)*/

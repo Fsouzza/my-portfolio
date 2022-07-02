@@ -1,57 +1,8 @@
-1 - CRIAR DROP MENU TRANSLATE;
+1 - INSERIR NOVOS CURSOS E ALTERAR OS CAMPOS DE ORDEM;
 
-2 - INSERIR NOVOS CURSOS E ALTERAR OS CAMPOS DE ORDEM;
+2 - ALTERAR O DOCUMENTO DE PDF;
 
-3 - ALTERAR O DOCUMENTO DE PDF;
+3 - MODIFICAR FONT-SIZE DO MODO PDF;
 
-4 - MODIFICAR FONT-SIZE DO MODO PDF;
+4 - BACKGROUND TEXTURE DE KANJIS JAPONESES;
 
-5 - BUTTONLED EFFECT
-(.home__img--effect{
-    background: var(--contianer-cor-alt);
-    border-radius: .2rem;
-    padding: .3rem .2rem 0 .2rem;
-    transition: .5s;
-    position: relative;
-}
-
-.home__img--effect:hover{
-    transform: scale(1.01,1.01);
-    background: var(--cor-azul);
-    box-shadow: 0 0 50px var(--cor-azul);
-}
-
-.home__img--effect::before{
-    content: '';
-    position: absolute;
-    top: -6px;
-    left: 82%;
-    width: 40px;
-    height: 18px;
-    background: var(--texto-cor-light);
-    transform: translateX(-50%);
-    transition: .5s;
-}
-
-.home__img--effect:hover::before{
-    width: 50px;
-    left: 16%;
-}
-
-
-.home__img--effect::after{
-    content: '';
-    position: absolute;
-    bottom: -6px;
-    left: 16%;
-    width: 40px;
-    height: 18px;
-    background: var(--texto-cor-light);
-    transform: translateX(-50%);
-    transition: .5s;
-}
-
-.home__img--effect:hover::after{
-    width: 50px;
-    left: 82%;
-})
