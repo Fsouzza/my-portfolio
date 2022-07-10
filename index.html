@@ -885,20 +885,20 @@
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid">
+                <form action="https://formspree.io/f/xwkyyeqp" class="contact__form grid" method="POST">
                     <div class="contact__input grid">
                         <div class="contact__content">
                             <label for="name" class="contact__label">Nome</label>
-                            <input id="name" type="text" class="contact__inputs">
+                            <input id="name" name="Nome" type="text" class="contact__inputs" required>
                         </div>
                         <div class="contact__content">
-                            <label for="email" class="contact__label">Email</label>
-                            <input id="emaii" type="email" class="contact__inputs">
+                            <label for="email" class="contact__label">Email</label required>
+                            <input id="emaii" name="E-mail" type="email" class="contact__inputs">
                         </div>
                     </div>
                     <div class="contact__content">
-                            <label for="titulo" class="contact__label">Project</label>
-                            <input id="titulo" type="text" class="contact__inputs">
+                            <label for="titulo" class="contact__label">Project</label required>
+                            <input id="titulo" name="Titulo do Projeto" type="text" class="contact__inputs">
                     </div>
                     <div class="contact__content">
                             <label for="message" class="contact__label">Message</label>
@@ -906,10 +906,10 @@
                     </div>
 
                     <div>
-                        <a href="#" class="button button--flex">
+                        <button type="submit" class="button button--flex">
                             Send Message
                             <i class="uil uil-message button__icon"></i>
-                        </a>
+                        </button>
                     </div>
                 </form>
             </div>

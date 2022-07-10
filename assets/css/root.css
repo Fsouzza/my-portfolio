@@ -157,4 +157,11 @@ img{
     text-align: center;
 }
 
+.button{
+    border: none;
+    box-shadow: none;
+    font-family: var(--body-fonte);
+    font-size: var(--normal-font-size);
+}
+
 
