@@ -59,11 +59,11 @@
                             <i class='bx bx-mobile-alt nav__icon'></i> Resume CV
                         </a>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item item-desktop">
                         <div class="nav__link" data-target='#translate' id="translate">
                             
                             <div class="collapse">
-                            <i class='bx bxs-captions nav__icon'></i>Translate
+                            <i class='bx bxs-captions nav__icon'></i> Translate
                             <i class="uil uil-angle-down collapse__icon"></i>
                             </div>
 
@@ -80,7 +80,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </dli>
+                    </li>
                 </ul>
             </div>
 
@@ -117,16 +117,10 @@
                         </a>
                     </div>
 
-                    <div class="home__img box-card">
-                        <figure class="">
-                            <div class="circle"></div>
-                            <img class="profile" src="./assets/img/Profile/perfil-removebg.png">
-                        </figure>
-                        <figure class="box">
-                            <div class="portal"></div>
+                    <figure class="home__img box-card" id="box-card">
+                            <img class="profile" src="./assets/img/Filipe-card.png">
                             <img class="profile" src="./assets/img/Nogtisune-card.png" alt="" class="about__img">
-                        </figure>
-                    </div>
+                    </figure>
 
                     <div class="home__data">
                         <h1 class="home__title typing-animation">Hello, I'm Filipe Souza</h1>
@@ -169,7 +163,7 @@
                     <div class="about__info">
                         <div class="about__card">
                             <i class="uil uil-atom about__info-icon"></i>
-                            <span class="about__info-title">6+</span>
+                            <span class="about__info-title">3+</span>
                             <span class="about__info-name">Mouths <br> experience</span>
                         </div>
                         <div class="about__card">
@@ -211,7 +205,7 @@
 
                             <div>
                                 <h1 class="skills__title">Frontend developer</h1>
-                                <span class="skills__subtitle">More than 4 years</span>
+                                <span class="skills__subtitle">More than 6 mouths</span>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -266,11 +260,11 @@
                     <!--  SKILLS 2  -->
                     <div class="skills__content skills__close">
                         <div class="skills__header">
-                            <i class="uil uil-server-network-alt skills__icon"></i>
+                            <i class="uil uil-swatchbook skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__title">Backend developer</h1>
-                                <span class="skills__subtitle">More than 1 years</span>
+                                <h1 class="skills__title">UX Design</h1>
+                                <span class="skills__subtitle">More than 4 mouths</span>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -314,7 +308,7 @@
                     <!--  SKILLS 3  -->
                     <div class="skills__content skills__close">
                         <div class="skills__header">
-                            <i class="uil uil-swatchbook skills__icon"></i>
+                            <i class="uil uil-money-bill-stack skills__icon"></i>
 
                             <div>
                                 <h1 class="skills__title">Financial</h1>
@@ -626,8 +620,10 @@
 
             <div class="services__container container grid">
                 <!-- <<<<  SERVICES 1 >>>> -->
-                <div class="services__content">
-                    <div>
+                <div class="services__content card">
+                    
+                    <div class="content">
+                        <p>UI<br>UX</p>
                         <i class="uil uil-web-grid services__icon"></i>
                         <h3 class="services__title">Ui/Ux<br>Designer</h3>
                     </div>
@@ -636,9 +632,11 @@
                         View More
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
+                    
 
                     <div class="services__modal">
                         <div class="services__modal-content">
+                            
                             <h4 class="services__modal-title">Ui/Ux<br>Designer</h4>
                             <i class="uil uil-times services__modal-close"></i>
 
@@ -665,8 +663,9 @@
                 </div>
 
                 <!-- <<<<  SERVICES 2 >>>> -->
-                <div class="services__content">
-                    <div>
+                <div class="services__content card">
+                    <div class="content">
+                        <p>Front<br>End</p>
                         <i class="uil uil-arrow services__icon"></i>
                         <h3 class="services__title">Front-End<br>Developer</h3>
                     </div>
@@ -704,8 +703,9 @@
                 </div>
 
                 <!-- <<<<  SERVICES 3 >>>> -->
-                <div class="services__content">
-                    <div>
+                <div class="services__content card">
+                    <div class="content">
+                        <p>Web<br>Dsgnr</p>
                         <i class="uil uil-pen services__icon"></i>
                         <h3 class="services__title">Web<br>Designer</h3>
                     </div>
@@ -851,28 +851,37 @@
                     <div class="contact__information">
                         <i class="uil uil-phone contact__icon"></i>
 
-                        <div>
+                        <a href="#">
                             <h3 class="contact__title">Call Me</h3>
-                            <span class="contact__subtitle">+55 999-777</span>
-                        </div>
+                            <span class="contact__subtitle">+55 92 999-777</span>
+                        </a>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-whatsapp contact__icon"></i>
+
+                        <a href="https://wa.me/559292802907" target="_blank">
+                            <h3 class="contact__title">whatsApp</h3>
+                            <span class="contact__subtitle">+55 92 9994-7778</span>
+                        </a>
                     </div>
 
                     <div class="contact__information">
                         <i class="uil uil-envelope contact__icon"></i>
 
-                        <div>
+                        <a href="mailto:comercial@filipesouzza.adm@gmail.com" target="_blank">
                             <h3 class="contact__title">Email</h3>
                             <span class="contact__subtitle">filipesouzza.adm@gmail.com</span>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="contact__information">
                         <i class="uil uil-map-marker contact__icon"></i>
 
-                        <div>
+                        <a href="https://goo.gl/maps/PmjsoUYFkE6Cf47H9" target="_blank">
                             <h3 class="contact__title">Location</h3>
-                            <span class="contact__subtitle">Brazil - Amazonas Street Jose Prestes</span>
-                        </div>
+                            <span class="contact__subtitle">Brazil-Amazonas, Manaus</span>
+                        </a>
                     </div>
                 </div>
 
@@ -907,6 +916,10 @@
         </section>
     </main>
     
+    <!-- =======SCROLL TO TOP ============ -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bxs-up-arrow-alt scrolltop__icon' ></i>
+    </a>
     
     <footer class="footer">
         <div class="footer__bg">
@@ -949,11 +962,6 @@
             <p class="footer__copy">&#169; Mr Yeagger. All right reserved</p>
         </div>
     </footer>
-
-    <!-- =======SCROLL TO TOP ============ -->
-    <a href="#" class="scrolltop" id="scroll-top">
-        <i class='bx bxs-up-arrow-alt scrolltop__icon' ></i>
-    </a>
 
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>

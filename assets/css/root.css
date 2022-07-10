@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root{
-    --gradient: linear-gradient(180deg, #b3b1b1, #bbbbbb, #ecebeb);
+    --gradient: linear-gradient(180deg, #b3b1b1, #bbbbbb, #ecebeb, transparent);
     --textura: url('../img/textures/lined-paper-2.png');
     
     --body-cor: #ecebeb;
@@ -9,12 +9,14 @@
     --contianer-cor-alt: #d4d4d4;
     --footer: #202026;
 
-    --cor--botao:  #dbdfdf;
-    --cor-hover: #dddcdc;
+    --cor--botao:#dddcdc;
+    --cor-hover: #dbdfdf;
     --cor-link: #416CA6;
     --cor-link-hover: #dbdfdf;
     
-
+    --glass-color: 2px solid rgba(255,255,255, 0.5);
+    --glass-effect: rgba(0, 0, 0, 0.03);
+    
     --cor-azul: #056CF2; 
     --titulo-cor: #0b0a0a;
     --texto-cor: #403a3a;
@@ -33,7 +35,7 @@
     --pequeno-font-size: .875rem;
     --pequeno2-font-size: .81rem;
 
-    --input-color: #c4c4c4;
+    --input-color: #dddee0;
     --fonte-media: 500;
     --fonte-semi-bold: 600;
 
@@ -52,22 +54,26 @@
 
 /* ------------ VARIAVEL PARA DARK THEME ----------*/
 body.dark-theme{
-    --gradient: linear-gradient(180deg, #21578A, #1E2759, #262626);
-    --body-cor: #262626;
+    --gradient: linear-gradient(180deg, #21578A, #1E2759, #282c34, transparent);
+    --body-cor: #282c34;
     --container-cor: #4C5459;
     --contianer-cor-alt: #323640;
     --footer: #1a1c22;
 
     --cor--botao:  #455DDC;
     --cor-hover: #056CF2;
+    --cor--botao-secundario:#455DDC;
+    --cor--botao-hover:#056CF2;
     --cor-link-hover: #323640;
+    --glass-color: 2px solid rgba(29, 29, 29, 0.5);
+    --glass-effect: rgba(255, 255, 255, 0.014);
     
     --titulo-cor: #f2f2f2;
     --texto-cor: #bfbfbf;
     --texto-cor2: #F2F2F2;
     --texto-cor-light: #d1d1d1;
     
-    --input-color: #9498A6;
+    --input-color: #9fa4b6;
 
     --textura: url('../img/textures/brick-wall-dark.png');
     
