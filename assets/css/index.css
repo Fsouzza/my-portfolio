@@ -499,47 +499,51 @@
 
 /* ======= SKILLS BAR PORCENTAGE ====== */
 .skills__html{
-    width: 92%;
+    width: 96%;
 }
 
 .skills__css{
-    width: 86%;
+    width: 92%;
 }
 
 .skills__js{
-    width: 75%;
+    width: 80%;
 }
 
 .skills__react{
-    width: 50%;
+    width: 70%;
 }
 
-.skills__php{
-    width: 80%;
-}
-
-.skills__node{
-    width: 80%;
-}
-
-.skills__firebase{
-    width: 45%;
-}
-
-.skills__excel{
-    width: 90%;
-}
-
-.skills__invoices{
-    width: 84%;
-}
-
-.skills__archiving{
+.skills__typescript{
     width: 60%;
 }
 
+.skills__php{
+    width: 50%;
+}
+
+.skills__node{
+    width: 50%;
+}
+
+.skills__firebase{
+    width: 50%;
+}
+
+.skills__excel{
+    width: 50%;
+}
+
+.skills__invoices{
+    width: 50%;
+}
+
+.skills__archiving{
+    width: 50%;
+}
+
 .skills__adm{
-    width: 75%;
+    width: 50%;
 }
 /* ======= END OF SKILLS BAR PORCENTAGE ====== */
 
@@ -650,7 +654,6 @@
     border-radius: .25rem;
     box-shadow: 0 4px 9px rgba(0, 0, 0, .15);
     transition: .5s;
-    max-width: 250px;
 }
 
 .card{
@@ -663,9 +666,10 @@
 .card .content p{
     position: absolute;
     top: 30px;
-    right: 20px;
+    right: 10px;
     font-size: 4rem;
     font-weight: 500;
+    text-align: right;
     color: var(--glass-effect);
     pointer-events: none;
 }
@@ -712,7 +716,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -792,6 +796,11 @@
 
 .portfolio__descreption{
     margin-bottom: var(--mb-0-75);
+    font-size: 1rem;
+}
+
+.portfolio__descreption span{
+    font-size: .78rem;
 }
 
 .portfolio__button{
@@ -1031,6 +1040,7 @@
         height: 230px;
     }
 
+
     .home__content{
         grid-template-columns: .25fr 3fr;
     }
@@ -1056,6 +1066,11 @@
         width: 240px;
         height: 280px;
     }
+
+    .card .content p{
+        font-size: 3.4rem;
+    }
+
 
     .home__description{
         display: none;
