@@ -71,11 +71,11 @@
                                 <ul class="collapse__menu">
                                     <li class="collapse__link">
                                         <img src="./assets/img/icon/estados-unidos-da-america.png" class="band__icon">
-                                        <a href="./pages/error.html" class="collapse__sublink">English</a>
+                                        <a href="./pages/error.html" class="collapse__sublink">Eng</a>
                                     </li>
                                     <li class="collapse__link">
                                         <img src="./assets/img/icon/brasil.png" class="band__icon"> 
-                                        <a href="./pages/error.html" class="collapse__sublink">Portuguese</a>
+                                        <a href="./pages/error.html" class="collapse__sublink">Pt-br</a>
                                     </li>
                                 </ul>
                             </div>
@@ -917,21 +917,24 @@
                 <form action="https://formspree.io/f/xwkyyeqp" class="contact__form grid" method="POST">
                     <div class="contact__input grid">
                         <div class="contact__content">
-                            <label for="name" class="contact__label">Nome</label>
-                            <input id="name" name="Nome" type="text" class="contact__inputs" required>
+                            <label for="name" class="contact__label">Nome Completo</label>
+                            <input id="name" name="Nome" type="text" class="contact__inputs" pattern="(?:(\w+-?\w+)) (?:(\w+))(?: (\w+))?$" data-tipo="nome" required>
+                            <span class="input-mensagem-erro">Este campo não está válido</span>
                         </div>
                         <div class="contact__content">
-                            <label for="email" class="contact__label">Email</label required>
-                            <input id="emaii" name="E-mail" type="email" class="contact__inputs">
+                            <label for="email" class="contact__label">Email</label>
+                            <input id="emaii" name="E-mail" type="email" class="contact__inputs" pattern="(\w|\.)+@\w+\.\w+" data-tipo="email" required>
+                            <span class="input-mensagem-erro">Este campo não está válido</span>
                         </div>
                     </div>
                     <div class="contact__content">
-                            <label for="titulo" class="contact__label">Project</label required>
-                            <input id="titulo" name="Titulo do Projeto" type="text" class="contact__inputs">
+                            <label for="titulo" class="contact__label">Project</label>
+                            <input id="titulo" name="Titulo do Projeto" type="text" class="contact__inputs" maxlength="14" data-tipo="projeto" required>
+                            <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                     <div class="contact__content">
                             <label for="message" class="contact__label">Message</label>
-                            <textarea name="" id="message" cols="0" rows="7" class="contact__inputs"></textarea>
+                            <textarea name="" id="message" cols="0" rows="7" class="contact__inputs" maxlength="120" required></textarea>
                     </div>
 
                     <div>
@@ -998,6 +1001,7 @@
     <script src="./assets/js/actModal.js"></script>
     <script src="./assets/js/scroll.js"></script>
     <script src="./assets/js/dark-theme.js"></script>
+    <script src="./assets/js/form.js"></script>
 </body>
 
 

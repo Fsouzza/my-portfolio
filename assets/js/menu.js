@@ -15,7 +15,6 @@ showMenu('nav-toggle','nav-menu');
 
 
 
-
 /* ----------- REMOVE E ATIVA LINK DO MENU MOBILE -------------*/
 const navMenu = document.getElementById('nav-menu');
 const listaID = document.querySelectorAll('.nav__link');

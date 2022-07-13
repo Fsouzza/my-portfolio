@@ -9,7 +9,8 @@
     --contianer-cor-alt: #d4d4d4;
     --footer: #202026;
 
-    --cor--botao:#dddcdc;
+    --cor--botao:#D9D9D9;
+    --cor--botao-secund:#757272;
     --cor-hover: #dbdfdf;
     --cor-link: #416CA6;
     --cor-link-hover: #dbdfdf;
@@ -21,8 +22,7 @@
     --titulo-cor: #0b0a0a;
     --texto-cor: #403a3a;
     --texto-cor2: #1b1b1b;
-    --texto-cor3: #181616;
-    --texto-cor-light: #707070;
+    --texto-cor-light: #777a7e;
     
     
     --cabecalho-altura: 3rem;
@@ -61,6 +61,7 @@ body.dark-theme{
     --footer: #1a1c22;
 
     --cor--botao:  #455DDC;
+    --cor--botao-secund:#455DDC;
     --cor-hover: #056CF2;
     --cor--botao-secundario:#455DDC;
     --cor--botao-hover:#056CF2;
@@ -162,6 +163,7 @@ img{
     box-shadow: none;
     font-family: var(--body-fonte);
     font-size: var(--normal-font-size);
+    cursor: pointer;
 }
 
 

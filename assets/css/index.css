@@ -9,6 +9,12 @@
     margin-right: var(--mb-3);
 }
 
+.collapse__link{
+    align-items: center;
+    justify-content: center;
+}
+
+
 .grid{
     display: grid;
     gap: 1.5rem;
@@ -208,6 +214,7 @@
 
 .button:hover, .button:focus{
     background-color: var(--cor-hover);
+    transition: ease-in .5s;
 }
 
 .button__icon{
@@ -225,7 +232,7 @@
 
 .button--white:hover{
     background-color: var(--contianer-cor-alt);
-    color: var(--titulo-cor);
+    color: var(---texto-cor-light);
     
 }
 
@@ -261,7 +268,7 @@
     border-radius: .5rem;
     transition: 0.5s;
     overflow: hidden;
-    color: var(--texto-cor3);
+    color: var(--texto-cor2);
 }
 
 .button--hover:hover{
@@ -296,7 +303,7 @@
 }
 
 .whatsapp-icon{
-    color: var(--cor--botao);
+    color: var(--cor--botao-secund);
     font-size: 1.7rem;
 }
 
@@ -308,16 +315,18 @@
     align-items: center;
     border-radius: .5rem;
     background: transparent;
-    border: 2px solid var(--cor--botao);
+    border: 3px solid var(--cor--botao-secund);
 }
 
 .button--whatsapp:hover{
     border: none;
     background-color: var(--cor-hover);
+    transition: ease-in .5s;
 }
 
 .button--whatsapp:hover .whatsapp-icon{
     color: var(--texto-cor2);
+    transition: ease-in .5s;
 }
 
 /* ======= END BUTTONS ANIMATION ====== */
@@ -379,11 +388,12 @@
     background-color: var(--cor-link-hover);
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
     border: none;
-    transition: .5s;
+    transition: .6s;
 }
 
 .about__card:is(:hover,:focus) .about__info-icon{
     color: var(--cor-azul);
+    transition: .6s;
 }
 
 .about__info-icon{
@@ -661,6 +671,7 @@
     border-top: var(--glass-color);
     border-left: var(--glass-color);
     backdrop-filter: blur(12px);
+    cursor: pointer;
 }
 
 .card .content p{
@@ -944,6 +955,7 @@
 .contact__label{
     font-size: var(--pequeno-font-size);
     color: var(--titulo-cor);
+    font-weight: var(--fonte-media);
 }
 
 .contact__inputs{
@@ -955,6 +967,32 @@
     border: none;
     outline: none;
     padding: .25rem .5rem .5rem 0;
+}
+
+
+.input-container--invalido {
+    margin-bottom: 0;
+}
+
+.input-container--invalido input {
+    border-bottom: 3px solid #BF0606;
+}
+
+.input-container--invalido input {
+    color: #d10000;
+    font-weight: 500;
+}
+
+.input-mensagem-erro {
+    display: none;
+}
+
+.input-container--invalido .input-mensagem-erro {
+    color: #BF0606;
+    display: block;
+    margin-top: 0;
+    padding-left: 0.5rem;
+    font-size: .8rem;
 }
 
 
