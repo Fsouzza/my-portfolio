@@ -1179,6 +1179,10 @@
         width: 320px;   
     }
 
+    .portfolio__title, .portfolio__descreption{
+        margin-left: .8rem;
+    }
+
     .project__img{
         margin-top: 3rem;
         width: 200px;
