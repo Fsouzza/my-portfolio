@@ -29,18 +29,18 @@ const tiposDeErro = [
 
 const mensagensDeErro = {
     nome: {
-        valueMissing: 'O campo de nome está vazio.',
-        patternMismatch: 'Campo deve conter nome e sobrenome.'
+        valueMissing: 'The name field is empty.',
+        patternMismatch: 'Enter your first and last name.'
     },
     email: {
-        valueMissing: 'O campo de email está vazio.',
-        patternMismatch: 'Digite um e-mail válido.'
+        valueMissing: 'The email field is empty.',
+        patternMismatch: 'This email is not valid.'
     },
     projeto: {
-        valueMissing: 'O campo titulo do projeto está vazio.'
+        valueMissing: 'The project field is empty.'
     },
     mensagem: {
-        customError: 'O campo mensagem está vazio.'
+        customError: 'The message field is empty.'
     }
 };
 

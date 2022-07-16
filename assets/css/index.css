@@ -315,7 +315,7 @@
     align-items: center;
     border-radius: .5rem;
     background: transparent;
-    border: 3px solid var(--cor--botao-secund);
+    border: 2px solid var(--cor--botao-secund);
 }
 
 .button--whatsapp:hover{
@@ -1086,6 +1086,10 @@
     .grid{
         gap: .5rem;
     }
+
+    .nav__item:first-child{
+        display: none;
+    }
 }
 
 
@@ -1098,6 +1102,10 @@
 
     .typing-animation{
         animation: none;
+    }
+
+    .nav__item:first-child{
+        display: none;
     }
 
     .box-card, .box-card img{
@@ -1166,6 +1174,10 @@
     .project__img{
         width: 200px;
     }
+
+    .nav__list {
+        grid-template-columns: repeat(2, 1fr);
+      }
 }
 
 
@@ -1197,7 +1209,7 @@
 
     .home__content {
         grid-template-columns: max-content 1fr 1fr;
-      }
+    }
 }
 
 

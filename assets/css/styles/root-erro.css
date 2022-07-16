@@ -4,7 +4,7 @@
 :root{
     --cabecalho-altura: 3.5rem;
 
-    --cor-fundo-primary: #f0efef;
+    --cor-fundo-primary: #d4d4d4;
     --btn-azul: #155266;
 
     --font-size-grande: 2.4rem;
@@ -21,7 +21,7 @@
 
     --cor-black: #0b0a0a;
     --cor-cinza: #403a3a;
-    --cor-cinza-light: #e2dada;
+    --cor-cinza-light: #dfdddd;
     --cor-branco1: #fafafa;
     --cor-branco2: #f0efef;
     --cor-branco3: #fcfcfc;
