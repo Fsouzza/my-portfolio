@@ -1175,6 +1175,10 @@
         padding: 0 .5rem;
     }
 
+    .services__modal-content{
+        width: 320px;   
+    }
+
     .project__img{
         margin-top: 3rem;
         width: 200px;
