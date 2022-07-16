@@ -64,7 +64,7 @@
         width: 0;
     }
     to{
-        width: 10.8em;
+        width: 7.8em;
     }
 }
 
@@ -630,7 +630,7 @@
 
 .qualification__line{
     display: block;
-    width: 1px;
+    width: 2px;
     height: 100%;
     background-color: var(--cor-azul);
     transform: translate(6px,4px);
@@ -659,22 +659,18 @@
 
 .services__content{
     position: relative;
-    background-color: var(--container-cor);
+    background: transparent;
     padding: 3.5rem .5rem 1.25rem 1.5rem;
     border-radius: .25rem;
-    box-shadow: 0 4px 9px rgba(0, 0, 0, .15);
-    transition: .5s;
-}
-
-.card{
-    background: transparent;
     border-top: var(--glass-color);
     border-left: var(--glass-color);
+    box-shadow: 0 4px 9px rgba(0, 0, 0, .15);
+    transition: .5s;
     backdrop-filter: blur(12px);
     cursor: pointer;
 }
 
-.card .content p{
+.services__content .content p{
     position: absolute;
     top: 30px;
     right: 10px;
@@ -685,7 +681,7 @@
     pointer-events: none;
 }
 
-.card:is(:focus,:hover){
+.services__content:is(:focus,:hover){
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
 }
 
@@ -795,7 +791,7 @@
 }
 
 .portfolio__img{
-    width: 265px;
+    width: 310px;
     border-radius: .5rem;
     justify-self: center;
 }
@@ -1078,7 +1074,6 @@
         height: 230px;
     }
 
-
     .home__content{
         grid-template-columns: .25fr 3fr;
     }
@@ -1089,6 +1084,14 @@
 
     .nav__item:first-child{
         display: none;
+    }
+
+    .services__modal-content{
+        width: 320px;   
+    }
+
+    .portfolio__title, .portfolio__descreption{
+        margin-left: .6rem;
     }
 }
 
@@ -1164,6 +1167,7 @@
     }
 
     .services__content{
+        width: 250px;
         padding-right: 3.5rem;
     }
 
@@ -1172,7 +1176,9 @@
     }
 
     .project__img{
+        margin-top: 3rem;
         width: 200px;
+        height: 300px;
     }
 
     .nav__list {
@@ -1290,7 +1296,7 @@
     }
 
     .portfolio__img{
-        width: 340px;
+        width: 460px;
     }
 
     .portfolio__content{
@@ -1395,6 +1401,7 @@
 
     .home__title{
         font-size: 2rem;
+        color: var(--cor-azul);
         border-right: 3px solid rgba(0, 0, 0, .75);
         white-space: nowrap;
         overflow: hidden;
