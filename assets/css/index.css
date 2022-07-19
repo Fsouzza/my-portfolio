@@ -343,6 +343,8 @@
     align-self: center;
     overflow: hidden;
     transform: rotate(-12deg);
+    transform-style: preserve-3d;
+    perspective: 1000px;
     transition: .6s ease-out;
     filter: drop-shadow(12px 12px 10px rgba(0,0,0,.6));
 }
