@@ -921,11 +921,6 @@
     transition: .5s;
 }
 
-.contact__information a:focus{
-    background-color:var(--cor-link-hover);
-    color: var(--cor-azul);
-}
-
 
 .contact__icon{
     font-size: 2rem;
@@ -1181,6 +1176,7 @@
         width: 320px;   
     }
 
+
     .portfolio__title, .portfolio__descreption{
         margin-left: .8rem;
     }
@@ -1193,7 +1189,13 @@
 
     .nav__list {
         grid-template-columns: repeat(2, 1fr);
-      }
+    }
+
+    .contact__information{
+        width: 78%;
+        padding: 1rem .6rem;
+        margin-bottom: 0;
+    }
 }
 
 

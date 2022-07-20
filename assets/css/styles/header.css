@@ -123,8 +123,10 @@
 
 @media screen and (min-width: 414px) and (max-width: 767px){
     .nav__list{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
+
 
     .collapse{
         display: flex;
