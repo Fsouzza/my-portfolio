@@ -21,23 +21,23 @@
 }
 
 .home__container{
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .home__content{
     grid-template-columns: .5fr 3fr;
-    padding-top: 3.5rem;
+    padding-top: 3rem;
     align-items: center;
 }
 
 .home__social{
     display: grid;
     grid-template-columns: max-content;
-    row-gap: 1.5rem;
+    row-gap: 1rem;
 }
 
 .home__social-icon{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--texto-cor);
     padding: .5rem;
     border-radius: .86rem;
@@ -64,7 +64,7 @@
         width: 0;
     }
     to{
-        width: 7.8em;
+        width: 8.4em;
     }
 }
 
@@ -511,27 +511,27 @@
 
 /* ======= SKILLS BAR PORCENTAGE ====== */
 .skills__html{
-    width: 96%;
+    width: 98%;
 }
 
 .skills__css{
-    width: 92%;
+    width: 96%;
 }
 
 .skills__js{
-    width: 80%;
+    width: 85%;
 }
 
 .skills__react{
-    width: 70%;
+    width: 86%;
 }
 
 .skills__typescript{
-    width: 60%;
+    width: 70%;
 }
 
-.skills__php{
-    width: 50%;
+.skills__illustrator{
+    width: 70%;
 }
 
 .skills__node{
@@ -670,6 +670,7 @@
     transition: .5s;
     backdrop-filter: blur(12px);
     cursor: pointer;
+    z-index: 1;
 }
 
 .services__content .content p{
@@ -720,7 +721,7 @@
 
 /* ======= SERVICES MODALS ====== */
 .services__modal{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -730,17 +731,18 @@
     align-items: center;
     justify-content: center;
     padding: 0 1rem;
-    z-index: var(--z-modal);
+    z-index: 2;
     opacity: 0;
     visibility: hidden;
     transition: .4s;
 }
 
 .services__modal-content{
-    position: relative;
+    position: absolute;
     background-color: var(--contianer-cor-alt);
     padding: 1.5rem;
     border-radius: .6rem;
+    z-index: 999;
 }
 
 .services__modal-services{
@@ -1076,7 +1078,7 @@
     }
 
     .grid{
-        gap: .5rem;
+        gap: .2rem;
     }
 
     .nav__item:first-child{
@@ -1386,6 +1388,14 @@
         margin-bottom: 4rem;
     }
 
+    .portfolio__img{
+        width: 800px;
+    }
+
+    .portfolio__content{
+        align-items: center;
+    }
+
 }
 
 
@@ -1397,13 +1407,13 @@
     }
 
     .container{
-        max-width: 1024px;
+        max-width: 1200px;
 
     }
 
     .box-card, .box-card img{
-        width: 320px;
-        height: 400px;
+        width: 450px;
+        height: 550px;
     }
 
 
@@ -1412,15 +1422,15 @@
     }
 
     .home__title{
-        font-size: 2rem;
+        font-size: 3rem;
         color: var(--cor-azul);
-        border-right: 3px solid rgba(0, 0, 0, .75);
+        border-right: 4px solid rgba(0, 0, 0, .75);
         white-space: nowrap;
         overflow: hidden;
     }
 
     .home__social-icon{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .skills__container{
