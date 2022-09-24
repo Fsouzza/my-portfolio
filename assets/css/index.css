@@ -574,9 +574,6 @@
     transform: rotate(-180deg);
 }
 
-
-
-
 /* ======= QUALIFICATIONS ====== */
 .qualification__tabs{
     display: flex;
@@ -721,9 +718,9 @@
 
 /* ======= SERVICES MODALS ====== */
 .services__modal{
-    position: relative;
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: -50px;
+    left: -100px;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.9);
@@ -735,10 +732,13 @@
     opacity: 0;
     visibility: hidden;
     transition: .4s;
+    z-index: 50;
 }
 
 .services__modal-content{
     position: absolute;
+    top: 1%;
+    left: 1%;
     background-color: var(--contianer-cor-alt);
     padding: 1.5rem;
     border-radius: .6rem;
@@ -1439,6 +1439,7 @@
 
     .services__container{
         grid-template-columns: repeat(3, 242px);
+        gap: 6rem;
     }
 
     .portfolio__content{
