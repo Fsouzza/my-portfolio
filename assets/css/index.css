@@ -14,7 +14,6 @@
     justify-content: center;
 }
 
-
 .grid{
     display: grid;
     gap: 1.5rem;
@@ -68,7 +67,6 @@
     }
 }
 
-
 @keyframes blinkCursor{
     from{
         border-right-color: rgba(6, 43, 227, 0.9);
@@ -79,9 +77,6 @@
 }
 
 /* ======= END ANIMATION HELLO ============================= */
-
-
-
 
 /* ======= ANIMATION MAIN PHOTO ============================= */
 .box-card{
@@ -118,9 +113,7 @@
 .box-card:hover img:nth-child(1){
     transform: rotateY(-180deg);
 }
-
 /* ======= END ANIMATION =================================== */
-
 
 .home__data{
     grid-column: 1/3;
@@ -177,7 +170,6 @@
 .home__scroll:hover .home__scroll-button .home__scroll-name{
     color: var(--cor-azul);
 }
-
 
 
 /* ======= SECTIONS ====== */
@@ -256,7 +248,6 @@
     color: var(--cor-azul);
 }
 
-
 /* ======= BUTTONS ANIMATION ====== */
 .button--hover{
     position: relative;
@@ -328,11 +319,7 @@
     color: var(--texto-cor2);
     transition: ease-in .5s;
 }
-
 /* ======= END BUTTONS ANIMATION ====== */
-
-
-
 
 /* ======= ABOUT ====== */
 .about__img{
@@ -363,8 +350,6 @@
     display: grid;
     place-items: center;
 }
-
-
 
 .about__description{
     text-align: center;
@@ -425,7 +410,6 @@
     display: flex;
     justify-content: center;
 }
-
 
 
 /* ======= SKILLS ====== */
@@ -506,7 +490,6 @@
     display: block;
     background-color: var(--cor-azul);
 }
-
 
 
 /* ======= SKILLS BAR PORCENTAGE ====== */
@@ -648,9 +631,11 @@
 }
 
 
-
-
 /* ======= SERVICES ====== */
+.services{
+    margin-bottom: 4rem;
+}
+
 .services__container{
     gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
@@ -685,7 +670,6 @@
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
 }
 
-
 .services__icon{
     display: block;
     font-size: 1.5rem;
@@ -698,7 +682,6 @@
     margin-bottom: var(--mb-1);
     font-weight: var(--fonte-media)
 }
-
 
 .services__button{
     cursor: pointer;
@@ -719,11 +702,11 @@
 /* ======= SERVICES MODALS ====== */
 .services__modal{
     position: absolute;
-    top: -50px;
-    left: -100px;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -808,10 +791,15 @@
 .portfolio__descreption{
     margin-bottom: var(--mb-0-75);
     font-size: 1rem;
+    line-height: 2;
+    margin-bottom: 2rem;
 }
 
 .portfolio__descreption span{
-    font-size: .78rem;
+    background-color: var(--cor-tag);
+    font-size: .96rem;
+    font-weight: 600;
+    padding: 0 .5rem;
 }
 
 .portfolio__button{
@@ -1077,6 +1065,10 @@
         grid-template-columns: .25fr 3fr;
     }
 
+    .home__title{
+        font-size: 1.2rem;
+    }
+
     .grid{
         gap: .2rem;
     }
@@ -1119,7 +1111,6 @@
         font-size: 3.4rem;
     }
 
-
     .home__description{
         display: none;
     }
@@ -1161,12 +1152,13 @@
     }
 
     .services__container{
+        gap: 5rem;
         grid-template-columns: max-content;
         justify-content: center;
     }
 
     .services__content{
-        width: 250px;
+        width: 280px;
         padding-right: 3.5rem;
     }
 
@@ -1175,7 +1167,15 @@
     }
 
     .services__modal-content{
-        width: 320px;   
+        width: 275px;   
+    }
+
+    .services__modal-title{
+        font-size: 1rem;
+    }
+
+    .services__modal-service{
+        font-size: .76rem;
     }
 
 
@@ -1292,8 +1292,9 @@
     }
 
     .services__container{
-        grid-template-columns: repeat(3, 218px);
+        grid-template-columns: repeat(3, 300px);
         justify-content: center;
+        width: 100%;
     }
 
     .services__icon{
@@ -1305,7 +1306,7 @@
     }
 
     .services__modal-content{
-        width: 450px;
+        width: 294px;
         padding: 3rem 2rem 4rem 2rem;
     }
 
@@ -1438,8 +1439,8 @@
     }
 
     .services__container{
-        grid-template-columns: repeat(3, 242px);
-        gap: 6rem;
+        grid-template-columns: repeat(3, 300px);
+        gap: 4rem;
     }
 
     .portfolio__content{

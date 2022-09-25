@@ -7,6 +7,7 @@
     --body-cor: #ecebeb;
     --container-cor: #fafafa;
     --contianer-cor-alt: #d4d4d4;
+    --cor-tag: #bcbcbc;
     --footer: #202026;
 
     --cor--botao:#D9D9D9;
@@ -58,6 +59,7 @@ body.dark-theme{
     --body-cor: #282c34;
     --container-cor: #4C5459;
     --contianer-cor-alt: #323640;
+    --cor-tag: #21232a;
     --footer: #1a1c22;
 
     --cor--botao:  #455DDC;
